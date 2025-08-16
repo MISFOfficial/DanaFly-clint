@@ -10,9 +10,11 @@ import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import ProfileLoader from '../../../Loader/ProfileLoader';
-import TourGuideProfile from '../../TourGuideProfile/TourGuideProfile';
+// import TourGuideProfile from '../../TourGuideProfile/TourGuideProfile';
 import useAxiosInstance from '../../../Hooks/useAxiosInstance';
 import useAxiosSecure from '../../../Hooks/useAxiosSecure';
+import userDemo from '../../../assets/userDemo.jpg'
+
 const ManageProfile = () => {
     const { user } = useAuth();
     const navigate = useNavigate();
@@ -68,7 +70,6 @@ const ManageProfile = () => {
         // For example, call Firebase updateProfile()
         // e.preventDefault()
         setIsModalOpen(false);
-        // //console.log('worked', data)
         const displayName = data?.name
         const photoURL = photo
 
@@ -103,8 +104,7 @@ const ManageProfile = () => {
             <div className="bg-white shadow rounded-lg p-6 space-y-6">
                 <div className="flex flex-col md:flex-row items-center gap-6">
                     <img
-                        src={userInfo?.photoURL}
-                        alt="Profile"
+                        src={userInfo?.photoURL || userDemo}
                         className="w-28 h-28 rounded-full border-4 border-[#00A99D] object-cover"
                     />
                     <div className="space-y-2">

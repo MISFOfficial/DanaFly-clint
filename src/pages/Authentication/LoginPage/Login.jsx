@@ -35,6 +35,7 @@ const Login = () => {
 
         signIn(data.email, data.password)
             .then(async (result) => {
+
                 Swal.fire({
                     title: 'Log In!',
                     icon: 'success',
@@ -60,7 +61,7 @@ const Login = () => {
 
     const handleGoogle = () => {
         googleAuth()
-            .then((result) => {
+            .then(async(result) => {
                 //console.log(result.user.displayName)
                 const userToDB = {
                     name: result?.user?.displayName,
@@ -70,6 +71,14 @@ const Login = () => {
                     createdAt: new Date().toISOString()
                 };
                 //console.log(userToDB)
+
+                 const loggedUser = {
+                    email: result.user.email,
+                    // role: role
+                };
+
+                //console.log(loggedUser)
+                await axiosSecure.post('/jwt', loggedUser);
 
                 axiosInstance.post('/users', userToDB).then(res => {
                     if (res.data.insertedId || res.data.inserted === false) {
