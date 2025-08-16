@@ -24,11 +24,10 @@ const Logout = () => {
             confirmButtonText: 'Yes, log me out!',
             cancelButtonText: 'Cancel'
         }).then(async (result) => {
-
             if (result.isConfirmed) {
                 logOut()
                     .then(async () => {
-                        await axiosSecure.post('/logout');
+                        await axiosSecure.post('/logout'); 
                         Swal.fire({
                             title: 'Logged out!',
                             icon: 'success',

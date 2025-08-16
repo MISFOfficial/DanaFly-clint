@@ -1,9 +1,9 @@
 import React from 'react';
+import Navigation from '../Component/Navigation/Navigation';
 import { Outlet } from 'react-router';
 import Footer from '../Component/Footer/Footer';
 import useAuth from '../Hooks/useAuth';
 import Loder from '../pages/Loader/Loder';
-import Navigation from '../Component/Navigation/Navigation';
 
 const RootLayout = () => {
 

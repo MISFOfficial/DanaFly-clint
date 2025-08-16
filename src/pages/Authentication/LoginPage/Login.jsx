@@ -35,7 +35,6 @@ const Login = () => {
 
         signIn(data.email, data.password)
             .then(async (result) => {
-
                 Swal.fire({
                     title: 'Log In!',
                     icon: 'success',
@@ -72,15 +71,14 @@ const Login = () => {
                 };
                 //console.log(userToDB)
 
-                 const loggedUser = {
+                const loggedUser = {
                     email: result.user.email,
                     // role: role
                 };
-
-                //console.log(loggedUser)
+                // console.log(loggedUser)
                 await axiosSecure.post('/jwt', loggedUser);
-
-                axiosInstance.post('/users', userToDB).then(res => {
+                axiosInstance.post('/users', userToDB).then(async (res) => {
+                    await axiosSecure.post('/jwt', loggedUser);
                     if (res.data.insertedId || res.data.inserted === false) {
                         Swal.fire(
                             'Log In.',
@@ -142,7 +140,7 @@ const Login = () => {
                 {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>}
 
                 {/* Forgot Password */}
-                <div  className="text-right text-sm text-[#9a6b4c] underline mb-4">
+                <div className="text-right text-sm text-[#9a6b4c] underline mb-4">
                     <Link to='/forgetPass'>Forgot password?</Link>
                 </div>
 

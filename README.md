@@ -108,18 +108,7 @@ By Creating and managing user can find the subsciptions as they want.
 - Render / Railway / Vercel Functions – Hosting the backend API
 - MongoDB Atlas – Cloud-hosted MongoDB database
 
-## ✨ Core Features
-- User authentication with JWT
-
-- Responsive design for all devices
-
-- Real-time data updates
-
-- Payment integration with Stripe
-
 ### npm packages
-
-
 
 ## Dependencies
 
@@ -224,8 +213,3 @@ To set up the project locally, follow these steps:
    ```
 
 ---
-
-## 🔗 Useful Links
-- [Frontend Repo](https://github.com/MISFOfficial/DanaFly-clint)
-- [Backend Repo](https://github.com/MISFOfficial/DanaFly-server-site)
-- [DanaFly Live Site](https://danafly-acbb0.web.app)

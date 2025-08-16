@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Logo from '../Navigation/Logo';
+import {  FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 // Adjust if needed
 
 const Footer = () => {
@@ -20,10 +21,9 @@ const Footer = () => {
                     <h3 className="text-lg font-semibold text-[#00A99D] mb-4">Quick Links</h3>
                     <ul className="space-y-2 text-sm text-gray-700">
                         <li><Link to="/" className="hover:text-[#00A99D]">Home</Link></li>
-                        <li><Link to="/packages" className="hover:text-[#00A99D]">Tour Packages</Link></li>
-                        <li><Link to="/guides" className="hover:text-[#00A99D]">Tour Guides</Link></li>
+                        <li><Link to="/trips" className="hover:text-[#00A99D]">Tour Packages</Link></li>
                         <li><Link to="/community" className="hover:text-[#00A99D]">Community</Link></li>
-                        <li><Link to="/contact" className="hover:text-[#00A99D]">Contact Us</Link></li>
+                        <li><Link to="/about" className="hover:text-[#00A99D]">About Us</Link></li>
                     </ul>
                 </div>
 
@@ -56,8 +56,19 @@ const Footer = () => {
                 </div>
             </div>
 
+            <div className="mt-10 text-center text-gray-500 text-xl md:text-3xl flex items-center w-full justify-center gap-5">
+                <a href="https://www.youtube.com/@misf-official" target='_blank' className='text-red-500'>
+                    <FaYoutube></FaYoutube>
+                </a>
+                <a href="https://github.com/MISFOfficial" target='_blank' className='text-black'>
+                    <FaGithub></FaGithub>
+                </a>
+                <a href="https://www.linkedin.com/in/msfofficial/" target='_blank' className='text-blue-500'>
+                    <FaLinkedinIn></FaLinkedinIn>
+                </a>
+            </div>
             {/* Footer bottom text */}
-            <div className="mt-10 text-center text-gray-500 text-sm">
+            <div className="mt-5 text-center text-gray-500 text-sm">
                 © {new Date().getFullYear()} DanaFly. All rights reserved. Dev by Muksitul Islam
             </div>
 
