@@ -5,8 +5,6 @@ import { FaBoxOpen, FaHistory, FaHome, FaSearchLocation, FaSignOutAlt, FaUserEdi
 import { IoSettings } from "react-icons/io5";
 import { useQuery } from '@tanstack/react-query';
 import useAuth from '../Hooks/useAuth';
-// import LoaderDesh from '../Loader/LoaderDeashboard/LoaderDesh';
-// import useAxiosInstance from '../Hooks/useAxiosInstance';
 import useAxiosSecure from '../Hooks/useAxiosSecure';
 import Loder from '../pages/Loader/Loder';
 import Swal from 'sweetalert2';
@@ -18,7 +16,7 @@ const DeshboardLayout = () => {
 
     const navigate = useNavigate()
 
-    const { data: role = '', isLoading } = useQuery({
+    const { data: role = '' } = useQuery({
         queryKey: ['user-role', user?.email],
         queryFn: async () => {
             const res = await axiosSecure.get(`/users/role/${user.email}`);
@@ -27,9 +25,9 @@ const DeshboardLayout = () => {
     });
 
     //console.log(role)
-    if(isLoading){
-        return <Loder></Loder>
-    }
+    // if(isLoading){
+    //     return <Loder></Loder>
+    // }
   
 
     const handleLogOut = async () => {
@@ -100,16 +98,10 @@ const DeshboardLayout = () => {
                     </div>
 
 
-                    <div className='p-4 md:p-12'>
-
+                    <div className='p-4 md:p-12 min-h-screen '>
                         <Outlet></Outlet>
                     </div>
 
-                    <div className=' py-20 px-10 bg-gray-200 flex flex-1 justify-center items-center'>
-                        <div className='  rounded-full '>
-                            <h1 className='text-center'>© {new Date().getFullYear()} All right serve by Muksitul Islam</h1>
-                        </div>
-                    </div>
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
