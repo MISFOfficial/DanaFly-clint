@@ -1,14 +1,14 @@
 import React from 'react';
 import { FaHome, FaSignOutAlt } from 'react-icons/fa';
-import { IoInformationCircleSharp } from 'react-icons/io5';
-import { MdOutlineTravelExplore } from 'react-icons/md';
-import { RiUserCommunityLine } from 'react-icons/ri';
+// import { IoInformationCircleSharp } from 'react-icons/io5';
+// import { MdOutlineTravelExplore } from 'react-icons/md';
+// import { RiUserCommunityLine } from 'react-icons/ri';
 import { NavLink, useNavigate } from 'react-router';
 import Swal from 'sweetalert2';
 import useAuth from '../../Hooks/useAuth';
 import useAxiosSecure from '../../Hooks/useAxiosSecure';
 
-const NavMenu = () => {
+const Navlink = () => {
 
     const { user, logOut } = useAuth()
     const navigate = useNavigate()
@@ -156,4 +156,4 @@ const NavMenu = () => {
     );
 };
 
-export default NavMenu;
+export default Navlink;

@@ -2,9 +2,8 @@ import React from 'react';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import SignInBtn from '../Buttons/SignInBtn';
 import Logo from './Logo';
-import Navlink from './NavLink';
+import Navlink from './Navlink';
 import useAuth from '../../Hooks/useAuth';
-import Logout from '../Buttons/Logout';
 import MenuProfile from './MenuProfile';
 
 const Menu = () => {
