@@ -70,11 +70,11 @@ const MyAssignedTours = () => {
     return (
         <section>
             <title>DanaFly - Deshboard/My Assigned Tour</title>
-            <h2 className="text-2xl font-bold text-[#00A99D] mb-6">My Assigned Tours</h2>
+            <h2 className="text-2xl font-bold text-light mb-6">My Assigned Tours</h2>
 
             <div className="overflow-x-auto rounded-lg">
                 <table className="min-w-full bg-white">
-                    <thead className="bg-[#00A99D] text-white">
+                    <thead className="bg-[#00A99D] text-light">
                         <tr>
                             <th className="py-3 px-4 text-left">Package Name</th>
                             <th className="py-3 px-4 text-left">Tourist Name</th>
@@ -102,7 +102,7 @@ const MyAssignedTours = () => {
                                                 <button
                                                     onClick={() => handleAccept(booking._id)}
                                                     disabled={(booking.status === 'accepted' || booking.status === 'rejected' || booking.status === 'pending')}
-                                                    className={`px-3 py-1 rounded text-white ${(booking.status === 'accepted' || booking.status === 'rejected' || booking.status === 'pending')
+                                                    className={`px-3 py-1 rounded text-light ${(booking.status === 'accepted' || booking.status === 'rejected' || booking.status === 'pending')
                                                         ? 'bg-gray-400 cursor-not-allowed'
                                                         : 'bg-green-600 hover:bg-green-700'
                                                         }`}
@@ -112,7 +112,7 @@ const MyAssignedTours = () => {
                                                 <button
                                                     onClick={() => handleReject(booking._id)}
                                                     disabled={(booking.status === 'accepted' || booking.status === 'rejected')}
-                                                    className={`px-3 py-1 rounded text-white ${(booking.status === 'accepted' || booking.status === 'rejected')
+                                                    className={`px-3 py-1 rounded text-light ${(booking.status === 'accepted' || booking.status === 'rejected')
                                                         ? 'bg-gray-400 cursor-not-allowed'
                                                         : 'bg-red-600 hover:bg-red-700'
                                                         }`}
@@ -142,7 +142,7 @@ const MyAssignedTours = () => {
                     <button
                         key={pageNum + 1}
                         onClick={() => setCurrentPage(pageNum + 1)}
-                        className={`px-3 py-1 rounded ${currentPage === pageNum + 1 ? 'bg-[#00A99D] text-white' : 'bg-gray-200 hover:bg-gray-300'}`}
+                        className={`px-3 py-1 rounded ${currentPage === pageNum + 1 ? 'bg-[#00A99D] text-light' : 'bg-gray-200 hover:bg-gray-300'}`}
                     >
                         {pageNum + 1}
                     </button>

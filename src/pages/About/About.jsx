@@ -37,11 +37,11 @@ const About = () => {
     return (
         <div className="max-w-6xl mx-auto px-4 py-16">
             <title>DanaFly - About us</title>
-            <h1 className="text-xl md:text-4xl font-bold text-[#00A99D] mb-6">About the Developer</h1>
+            <h1 className="text-xl md:text-4xl font-bold text-light mb-6">About the Developer</h1>
 
             {/* Personal Info */}
             <div className="bg-white border-t-6 border-[#00A99D] rounded-xl shadow-lg p-6 md:p-10 mb-12">
-                <h2 className="text-lg md:text-2xl font-semibold mb-3">👋 Hello, I'm <span className="text-[#00A99D]">Muksitul Islam</span></h2>
+                <h2 className="text-lg md:text-2xl font-semibold mb-3">👋 Hello, I'm <span className="text-light">Muksitul Islam</span></h2>
                 <p className="text-gray-700 leading-relaxed text-sm md:text-lg">
                     I am a self-motivated full-stack web developer specialized in building efficient, scalable, and modern web applications using the <strong>MERN Stack</strong>. I thrive on solving real-world problems with clean code and intuitive design.
                 </p>
@@ -50,9 +50,9 @@ const About = () => {
                 </p>
 
                 <div className="mt-6 space-y-2 text-gray-600 text-[12px] md:text-lg">
-                    <p className="flex items-center gap-2"><FaEnvelope className="text-[#00A99D]" /> <strong>Email:</strong> muksitul44@gmail.com</p>
-                    <p className="flex items-center gap-2"><FaMapMarkerAlt className="text-[#00A99D]" /> <strong>Location:</strong>Dhaka, Bangladesh</p>
-                    <p><strong className='flex items-center gap-2'><GiSkills className="text-[#00A99D]"></GiSkills> Skills:</strong></p>
+                    <p className="flex items-center gap-2"><FaEnvelope className="text-light" /> <strong>Email:</strong> muksitul44@gmail.com</p>
+                    <p className="flex items-center gap-2"><FaMapMarkerAlt className="text-light" /> <strong>Location:</strong>Dhaka, Bangladesh</p>
+                    <p><strong className='flex items-center gap-2'><GiSkills className="text-light"></GiSkills> Skills:</strong></p>
                     <div className="flex flex-wrap gap-2 mt-2">
                         {[
                             'React', 'Node.js', 'MongoDB', 'Express.js', 'Firebase',
@@ -68,7 +68,7 @@ const About = () => {
 
             {/* Projects Section */}
             <div className="bg-white rounded-xl shadow-lg p-6 md:p-10">
-                <h2 className=" text-lg md:text-2xl font-semibold text-[#00A99D] mb-4">🚀 My Projects</h2>
+                <h2 className=" text-lg md:text-2xl font-semibold text-light mb-4">🚀 My Projects</h2>
                 <ul className="space-y-6">
                     {projects.map(project => (
                         <li key={project.id} className="border-l-4 border-[#00A99D] rounded-md pl-4">
@@ -78,7 +78,7 @@ const About = () => {
                                     href={project.live}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-1 text-[#00A99D] hover:underline"
+                                    className="flex items-center gap-1 text-light hover:underline"
                                 >
                                     <FaExternalLinkAlt /> Live Site
                                 </a>

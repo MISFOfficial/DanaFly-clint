@@ -32,7 +32,7 @@ const Story = () => {
 
     return (
         <section className="py-16">
-            <h2 className="text-xl md:text-3xl font-bold text-[#00A99D] mb-10">Traveler's Stories</h2>
+            <h2 className="text-xl md:text-3xl font-bold text-light mb-10">Traveler's Stories</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
                 {stories.map((story) => (
@@ -48,7 +48,7 @@ const Story = () => {
 
                         <div className="absolute inset-0 bg-black/50 z-10 transition group-hover:bg-black/60"></div>
 
-                        <div className="relative z-20 h-full flex flex-col justify-center gap-5 p-6 text-white">
+                        <div className="relative z-20 h-full flex flex-col justify-center gap-5 p-6 text-light">
                             <div>
                                 <h3 className="text-xl font-bold">{story.title}</h3>
                                 <p className="italic text-sm mb-2">By {story.posterName}</p>
@@ -91,7 +91,7 @@ const Story = () => {
             <div className="text-center">
                 <button
                     onClick={() => navigate('/community')}
-                    className="px-8 py-3 bg-[#00A99D] text-white font-semibold rounded-full hover:bg-[#00796b] transition"
+                    className="px-8 py-3 cta-btn text-light font-semibold rounded-full hover:scale-107 cursor-pointer transition"
                 >
                     All Stories
                 </button>

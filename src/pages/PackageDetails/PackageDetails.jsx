@@ -126,7 +126,7 @@ const PackageDetails = () => {
                         numberOfPieces={500}
                     />
                     <div className="fixed top-20 left-1/2 transform -translate-x-1/2 z-[1000] bg-white shadow-xl border-4 border-[#00A99D] px-6 py-4 rounded-2xl text-center animate-bounce max-w-xs sm:max-w-md">
-                        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#00A99D] mb-2">🎉 Congratulations!</h2>
+                        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-light mb-2">🎉 Congratulations!</h2>
                         <p className="text-gray-800 text-sm sm:text-md md:text-lg">
                             You’ve booked more than 3 tours! Thanks for being an awesome explorer 🧳✨
                         </p>
@@ -140,7 +140,7 @@ const PackageDetails = () => {
                     {/* Photo Gallery */}
                     <div className='justify-items-center'>
                         <div className='w-full'>
-                            <h3 className="text-lg md:text-4xl text-[#00A99D] font-bold mb-4">Photo Gallery</h3>
+                            <h3 className="text-lg md:text-4xl text-light font-bold mb-4">Photo Gallery</h3>
                         </div>
                         <div className='flex flex-wrap gap-3 justify-center border-4 md:border-8 rounded-2xl border-[#00A99D] p-3 w-full max-w-full'>
                             {packagesData.photo?.slice(0, 6).map((src, index) => (
@@ -165,7 +165,7 @@ const PackageDetails = () => {
                         />
                         <div className='flex justify-center mt-10'>
                             <Link to='/'>
-                                <button className='border-4 border-[#00A99D] bg-[#00A99D] text-white px-5 py-2 cursor-pointer rounded-3xl text-sm md:text-lg'>See more</button>
+                                <button className='border-4 border-[#00A99D] bg-[#00A99D] text-light px-5 py-2 cursor-pointer rounded-3xl text-sm md:text-lg'>See more</button>
                             </Link>
                         </div>
                     </div>
@@ -182,11 +182,11 @@ const PackageDetails = () => {
                         <div className="grid gap-4 grid-cols-1">
                             {[packagesData.day1, packagesData.day2, packagesData.day3].map((activity, index) => (
                                 <div key={index} className="flex items-start gap-4 bg-white shadow-md p-4 rounded-lg border-l-4 border-[#00A99D]">
-                                    <div className="text-[#00A99D] text-lg md:text-2xl mt-1"><HiCalendar /></div>
+                                    <div className="text-light text-lg md:text-2xl mt-1"><HiCalendar /></div>
                                     <div>
                                         <h4 className="text-lg font-semibold text-gray-800 mb-1">Day {index + 1}</h4>
                                         <p className="text-gray-600 flex items-center gap-2 text-sm md:text-lg">
-                                            <HiCheckCircle className="text-[#00A99D]" /> {activity}
+                                            <HiCheckCircle className="text-light" /> {activity}
                                         </p>
                                     </div>
                                 </div>
@@ -202,7 +202,7 @@ const PackageDetails = () => {
                                 <button
                                     key={guide._id}
                                     onClick={() => navigate(`/guides_details/${guide._id}`)}
-                                    className="flex-shrink-0 min-w-[12rem] p-2 md:p-4 bg-[#00A99D] rounded-lg shadow hover:bg-white hover:text-black text-white transition text-center text-sm md:text-lg"
+                                    className="flex-shrink-0 min-w-[12rem] p-2 md:p-4 bg-[#00A99D] rounded-lg shadow hover:bg-white hover:text-black text-light transition text-center text-sm md:text-lg"
                                 >
                                     {guide.name}
                                 </button>
@@ -250,7 +250,7 @@ const PackageDetails = () => {
 
                         <button
                             type="submit"
-                            className="w-full text-sm md:text-lg bg-[#00A99D] text-white font-semibold py-3 rounded hover:bg-[#00796b] transition"
+                            className="w-full text-sm md:text-lg bg-[#00A99D] text-light font-semibold py-3 rounded hover:bg-[#00796b] transition"
                         >
                             Book Now
                         </button>
@@ -261,7 +261,7 @@ const PackageDetails = () => {
             <div className="relative h-60 md:h-[25rem]">
                 <img className="h-full w-full object-cover" src={photo} alt="Package Banner" />
                 <div className='absolute top-0 h-full w-full bg-[#00000046] flex items-center justify-center'>
-                    <h1 className='text-white -mt-20 text-md md:text-4xl font-bold border-4 p-4'>Our Packages</h1>
+                    <h1 className='text-light -mt-20 text-md md:text-4xl font-bold border-4 p-4'>Our Packages</h1>
                 </div>
             </div>
         </section>

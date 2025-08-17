@@ -28,7 +28,7 @@ const GuideDetails = () => {
                 <div className="flex flex-col md:flex-row items-center gap-6 justify-center">
                     <img src={guide.photo} alt={guide.name} className="w-40 h-40 rounded-full object-cover border-4 border-[#00A99D]" />
                     <div>
-                        <h2 className="text-3xl font-bold text-[#00A99D]">{guide.name}</h2>
+                        <h2 className="text-3xl font-bold text-light">{guide.name}</h2>
                         <p className="text-gray-600 italic">{guide.applicationTitle}</p>
                         <p className="mt-2 text-sm"><span className="font-semibold">Email:</span> {guide.email}</p>
                         <p className="text-sm"><span className="font-semibold">Phone:</span> {guide.phone}</p>
@@ -39,7 +39,7 @@ const GuideDetails = () => {
                 </div>
 
                 <div className="mt-6">
-                    <h3 className="text-xl font-semibold mb-2 text-[#00A99D]">Motivation</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-light">Motivation</h3>
                     <p className="text-gray-700">{guide.motivation}</p>
                 </div>
 
@@ -48,7 +48,7 @@ const GuideDetails = () => {
                         href={guide.cvLink}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-block mt-3 px-4 py-2 bg-[#00A99D] text-white rounded hover:bg-[#00897B] transition"
+                        className="inline-block mt-3 px-4 py-2 bg-[#00A99D] text-light rounded hover:bg-[#00897B] transition"
                     >
                         View CV
                     </a>

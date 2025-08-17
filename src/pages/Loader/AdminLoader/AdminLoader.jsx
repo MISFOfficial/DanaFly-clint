@@ -4,7 +4,7 @@ const AdminLoader = () => {
     return (
         <div className="py-5 animate-pulse">
             {/* Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-white">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-light">
                 <div className="bg-[#00A99D] rounded-2xl p-12">
                     <h4 className="text-lg">Total Payment</h4>
                     <p className="text-2xl font-bold">৳

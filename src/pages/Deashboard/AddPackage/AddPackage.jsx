@@ -83,7 +83,7 @@ const AddPackage = () => {
     return (
         <section >
             <title>DanaFly - Deshboard/Add packages</title>
-            <h2 className="text-2xl font-bold mb-6 text-[#00A99D]">Add a Tour Package</h2>
+            <h2 className="text-2xl font-bold mb-6 text-light">Add a Tour Package</h2>
             <div className="p-6 bg-white rounded shadow">
                 <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-4">
 
@@ -178,7 +178,7 @@ const AddPackage = () => {
                     <button
                         type="submit"
                         disabled={isUploading}
-                        className={`bg-[#00A99D] text-white px-6 py-2 rounded hover:bg-[#00796b] transition ${isUploading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                        className={`bg-[#00A99D] text-light px-6 py-2 rounded hover:bg-[#00796b] transition ${isUploading ? 'opacity-50 cursor-not-allowed' : ''}`}
                     >
                         {isUploading ? 'Uploading...' : 'Post'}
                     </button>

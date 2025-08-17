@@ -54,65 +54,67 @@ const Navlink = () => {
 
     return (
         <>
-            <li>
+            <li className='text-[18px]'>
                 <NavLink
                     to="/"
                     className={({ isActive }) =>
                         isActive
-                            ? 'bg-[#00A99D] text-white p-2 rounded-md delay-100'
-                            : 'p-2 text-[#1b130d] hover:text-[#00A99D] '
+                            ? 'bg-[#00A99D] text-light p-2 rounded-md delay-100'
+                            : 'p-2 text-[#1b130d] hover:text-light '
                     }
                 >
                     Home
                 </NavLink>
             </li>
-            <li>
+            <li  className='text-[18px]'>
                 <NavLink
                     to="/community"
                     className={({ isActive }) =>
                         isActive
-                            ? 'bg-[#00A99D] text-white p-2 rounded-md'
-                            : 'p-2 text-[#1b130d] hover:text-[#00A99D]'
+                            ? 'bg-[#00A99D] text-light p-2 rounded-md'
+                            : 'p-2 text-[#1b130d] hover:text-light'
                     }
                 > 
                     Community
                 </NavLink>
             </li>
-            <li>
+            <li className='text-[18px]'>
                 <NavLink
                     to="/trips"
                     className={({ isActive }) =>
                         isActive
-                            ? 'bg-[#00A99D] text-white p-2 rounded-md'
-                            : 'p-2 text-[#1b130d] hover:text-[#00A99D]'
+                            ? 'bg-[#00A99D] text-light p-2 rounded-md'
+                            : 'p-2 text-[#1b130d] hover:text-light'
                     }
                 > 
                     Trips
                 </NavLink>
             </li>
-            <li>
+            <li className='text-[18px]'>
                 <NavLink
                     to="/about"
                     className={({ isActive }) =>
                         isActive
-                            ? 'bg-[#00A99D] text-white p-2 rounded-md'
-                            : 'p-2 text-[#1b130d] hover:text-[#00A99D]'
+                            ? 'bg-[#00A99D] text-light p-2 rounded-md'
+                            : 'p-2 text-[#1b130d] hover:text-light'
                     }
                 >
                    
                     About Us
                 </NavLink>
             </li>
+
+            {/* small device */}
             {user &&
                 <ul className='lg:hidden'>
                     <div className='divider mb-0'></div>
-                    <li>
+                    <li >
                         <NavLink
                             to="/deshboard"
                             className={({ isActive }) =>
                                 isActive
-                                    ? 'bg-[#00A99D] text-white p-2 rounded-md'
-                                    : 'p-2 text-[#1b130d] hover:text-[#00A99D]'
+                                    ? 'bg-[#00A99D] text-light p-2 rounded-md'
+                                    : 'p-2 text-[#1b130d] hover:text-light'
                             }
                         >
                             Deshboard
@@ -123,8 +125,8 @@ const Navlink = () => {
                             to="/*"
                             className={({ isActive }) =>
                                 isActive
-                                    ? 'bg-[#00A99D] text-white p-2 rounded-md'
-                                    : 'p-2 text-[#1b130d] hover:text-[#00A99D]'
+                                    ? 'bg-[#00A99D] text-light p-2 rounded-md'
+                                    : 'p-2 text-[#1b130d] hover:text-light'
                             }
                         >
                             Offer Announcement
@@ -135,8 +137,8 @@ const Navlink = () => {
                             to="/*"
                             className={({ isActive }) =>
                                 isActive
-                                    ? 'bg-[#00A99D] text-white p-2 rounded-md'
-                                    : 'p-2 text-[#1b130d] hover:text-[#00A99D]'
+                                    ? 'bg-[#00A99D] text-light p-2 rounded-md'
+                                    : 'p-2 text-[#1b130d] hover:text-light'
                             }
                         >
                             Setting

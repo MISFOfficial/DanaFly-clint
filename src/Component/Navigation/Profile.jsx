@@ -59,8 +59,8 @@ const Profile = () => {
             <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-50 md:w-80 p-4 shadow-sm mt-8 space-y-5 border-y-4 border-[#00A99D] ">
                 <div className=' rounded-lg shadow-lg bg-[#00A99D] flex flex-col justify-center items-center p-3'>
                     <img className='w-15 h-15 object-cover rounded-full cursor-pointer' src={user.photoURL} alt="" />
-                    <h1 className='mt-3 text-white text-center'>{user.displayName}</h1>
-                    <p className='text-white text-center'>{user.email}</p>
+                    <h1 className='mt-3 text-light text-center'>{user.displayName}</h1>
+                    <p className='text-light text-center'>{user.email}</p>
                 </div>
                 <ul className=' flex flex-col gap-1.5'>
 

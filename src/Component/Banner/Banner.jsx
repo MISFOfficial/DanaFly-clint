@@ -59,7 +59,7 @@ const Banner = () => {
                             {/* Slide title at bottom right */}
                             <div className='absolute bg-[#0000009c] h-full w-full top-0'>
                             </div>
-                            <div className="absolute bottom-4 right-4  bg-[#00A99D] text-white text-[8px] md:text-sm px-4 py-2 rounded shadow-md flex items-center gap-2">
+                            <div className="absolute bottom-4 right-4  bg-[#00A99D] text-light text-[8px] md:text-sm px-4 py-2 rounded shadow-md flex items-center gap-2">
                                 <FaLocationArrow></FaLocationArrow> {slide.title}
                             </div>
                         </div>
@@ -75,7 +75,7 @@ const Banner = () => {
                     opacity: 1,
                     transition: { duration: 1 }
                 }}
-                className="absolute h-full w-full top-0 flex flex-col text-white items-center justify-center px-3 md:px-20 z-20">
+                className="absolute h-full w-full top-0 flex flex-col text-light items-center justify-center px-3 md:px-20 z-20">
                 <div>
                     <h1 className="font-extrabold text-md md:text-4xl title-font text-start banner-text">
                         Explore Bangladesh with DanaFly – Your Ultimate Travel Guide
@@ -91,7 +91,7 @@ const Banner = () => {
                             </button>
                         </Link>
                         <Link to='/community'>
-                            <button className="transition hover:scale-110 px-3 py-1 md:px-8 md:py-3 bg-[#00A99D] text-white duration-500 border-[#00A99D] border-3 cursor-pointer text-[12px] md:text-[20px]">
+                            <button className="transition hover:scale-110 px-3 py-1 md:px-8 md:py-3 cta-btn text-light duration-500 btn-border cursor-pointer text-[12px] md:text-[20px]">
                                 Explore More
                             </button>
                         </Link>

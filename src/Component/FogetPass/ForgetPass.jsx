@@ -33,11 +33,11 @@ const ForgetPass = () => {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
             <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
-                <div className='text-[#00A99D] text-2xl flex items-center justify-between mb-4'>
+                <div className='text-light text-2xl flex items-center justify-between mb-4'>
                     <Link to='/login'><FaArrowCircleLeft /></Link>
                     <Link to='/'><FaHome /></Link>
                 </div>
-                <h2 className="text-2xl font-bold text-center text-[#00A99D] mb-6">Forgot Password</h2>
+                <h2 className="text-2xl font-bold text-center text-light mb-6">Forgot Password</h2>
                 <form onSubmit={handleSubmit} className="space-y-5">
                     <div>
                         <label className="block text-sm font-medium text-gray-700">
@@ -53,7 +53,7 @@ const ForgetPass = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-full bg-[#00A99D] text-white py-2 rounded-lg font-semibold hover:bg-[#008f84] transition-colors"
+                        className="w-full bg-[#00A99D] text-light py-2 rounded-lg font-semibold hover:bg-[#008f84] transition-colors"
                     >
                         Send Reset Link
                     </button>

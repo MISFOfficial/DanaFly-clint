@@ -4,10 +4,30 @@
 
 
 body {
-      @apply bg-gray-100;
+      @apply bg-[#0A192F];
       font-family: "Signika Negative", sans-serif;
 }
 
 .banner-text {
       font-family: "Borel", cursive;
+}
+
+.bg-p1{
+      @apply bg-[#1E90FF]
+}
+
+.bg-p2{
+      @apply bg-[#64FFDA]
+}
+
+.text-light{
+      @apply text-[#FFFFFF]
+}
+
+.cta-btn{
+      @apply bg-[#FF4C60] 
+}
+
+.btn-border{
+      @apply border-[#FF4C60] border-3
 }

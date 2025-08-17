@@ -18,18 +18,18 @@ const Footer = () => {
 
                 {/* Navigation Links */}
                 <div>
-                    <h3 className="text-lg font-semibold text-[#00A99D] mb-4">Quick Links</h3>
+                    <h3 className="text-lg font-semibold text-light mb-4">Quick Links</h3>
                     <ul className="space-y-2 text-sm text-gray-700">
-                        <li><Link to="/" className="hover:text-[#00A99D]">Home</Link></li>
-                        <li><Link to="/trips" className="hover:text-[#00A99D]">Tour Packages</Link></li>
-                        <li><Link to="/community" className="hover:text-[#00A99D]">Community</Link></li>
-                        <li><Link to="/about" className="hover:text-[#00A99D]">About Us</Link></li>
+                        <li><Link to="/" className="hover:text-light">Home</Link></li>
+                        <li><Link to="/trips" className="hover:text-light">Tour Packages</Link></li>
+                        <li><Link to="/community" className="hover:text-light">Community</Link></li>
+                        <li><Link to="/about" className="hover:text-light">About Us</Link></li>
                     </ul>
                 </div>
 
                 {/* Email Report Form */}
                 <div>
-                    <h3 className="text-lg font-semibold text-[#00A99D] mb-4">Report or Feedback</h3>
+                    <h3 className="text-lg font-semibold text-light mb-4">Report or Feedback</h3>
                     <p className="text-sm text-gray-600 mb-3">
                         Found an issue or have suggestions? Send us an email.
                     </p>
@@ -48,7 +48,7 @@ const Footer = () => {
                         ></textarea>
                         <button
                             type="submit"
-                            className="mt-3 px-4 py-2 bg-[#00A99D] text-white rounded hover:bg-[#00796b] text-sm"
+                            className="mt-3 px-4 py-2 bg-[#00A99D] text-light rounded hover:bg-[#00796b] text-sm"
                         >
                             Send Email
                         </button>

@@ -55,7 +55,7 @@ const ManageCandidates = () => {
     // if (isLoading) {
     //     return (
     //         <div className="text-center py-20">
-    //             <span className="text-xl text-[#00A99D] font-semibold">Loading candidates...</span>
+    //             <span className="text-xl text-light font-semibold">Loading candidates...</span>
     //         </div>
     //     );
     // }
@@ -63,11 +63,11 @@ const ManageCandidates = () => {
     return (
         <section >r
             <title>DanaFly - Deshboard/Mange Candidate</title>
-            <h2 className="text-2xl font-bold text-[#00A99D] mb-6">Manage Tour Guide Candidates</h2>
+            <h2 className="text-2xl font-bold text-light mb-6">Manage Tour Guide Candidates</h2>
 
             <div className="overflow-x-auto">
                 <table className="w-full table-auto text-sm md:text-base border-collapse">
-                    <thead className="bg-[#00A99D] text-white">
+                    <thead className="bg-[#00A99D] text-light">
                         <tr>
                             <th className="p-2 border">#</th>
                             <th className="p-2 border">Name</th>
@@ -96,7 +96,7 @@ const ManageCandidates = () => {
                                     <td className="p-2">{candidate.experienceYears} yrs</td>
                                     <td className="p-2">{candidate.location}</td>
                                     <td className="p-2 capitalize">
-                                        <span className={`px-2 py-1 rounded text-white text-xs ${candidate.status === 'active'
+                                        <span className={`px-2 py-1 rounded text-light text-xs ${candidate.status === 'active'
                                             ? 'bg-green-500'
                                             : candidate.status === 'pending'
                                                 ? 'bg-yellow-500'
@@ -109,7 +109,7 @@ const ManageCandidates = () => {
                                         <button
                                             onClick={() => handleAccept(candidate.email)}
                                             disabled={candidate.status === 'active'}
-                                            className={`px-3 py-1 rounded text-white transition ${candidate.status === 'active'
+                                            className={`px-3 py-1 rounded text-light transition ${candidate.status === 'active'
                                                 ? 'bg-gray-400 cursor-not-allowed'
                                                 : 'bg-green-500 hover:bg-green-600'
                                                 }`}
@@ -118,7 +118,7 @@ const ManageCandidates = () => {
                                         </button>
                                         <button
                                             onClick={() => handleReject(candidate.email)}
-                                            className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
+                                            className="bg-red-500 hover:bg-red-600 text-light px-3 py-1 rounded"
                                         >
                                             Reject
                                         </button>
@@ -151,7 +151,7 @@ const ManageCandidates = () => {
                     <button
                         key={i + 1}
                         onClick={() => paginate(i + 1)}
-                        className={`px-3 py-1 rounded ${currentPage === i + 1 ? 'bg-[#00A99D] text-white' : 'bg-gray-100 hover:bg-gray-300'
+                        className={`px-3 py-1 rounded ${currentPage === i + 1 ? 'bg-[#00A99D] text-light' : 'bg-gray-100 hover:bg-gray-300'
                             }`}
                     >
                         {i + 1}

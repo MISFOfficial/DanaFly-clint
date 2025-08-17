@@ -33,7 +33,7 @@ const ManageStories = () => {
                     <div className="flex justify-center mb-4">
                         <div className="w-10 h-10 border-4 border-t-[#00A99D] border-[#b2dfdb] rounded-full animate-spin"></div>
                     </div>
-                    <h2 className="text-xl font-semibold text-[#00A99D] mb-1">Loading...</h2>
+                    <h2 className="text-xl font-semibold text-light mb-1">Loading...</h2>
                     <p className="text-gray-600 text-sm">
                         Please wait while we check your application status.
                     </p>
@@ -78,7 +78,7 @@ const ManageStories = () => {
 
     return (
         <section >
-            <h1 className="text-3xl font-bold text-start text-[#00A99D] mb-5">Manage Your Stories</h1>
+            <h1 className="text-3xl font-bold text-start text-light mb-5">Manage Your Stories</h1>
 
             {stories.length === 0 ? (
                 <p className="text-center text-gray-500">No stories found. Start by adding some!</p>
@@ -102,7 +102,7 @@ const ManageStories = () => {
 
                             {/* Story Info */}
                             <div className="mt-4">
-                                <h2 className="text-xl font-bold text-[#00A99D]">{story.title}</h2>
+                                <h2 className="text-xl font-bold text-light">{story.title}</h2>
                                 <p className="text-gray-700 mt-2">{story.description}</p>
 
                                 <p className="text-sm text-gray-500 mt-2 flex items-center">
@@ -111,7 +111,7 @@ const ManageStories = () => {
 
                                 {story.tags?.length > 0 && (
                                     <div className="mt-3 flex flex-wrap gap-2 text-sm">
-                                        <span className="bg-[#00A99D] text-white px-2 py-1 rounded flex items-center gap-1">
+                                        <span className="bg-[#00A99D] text-light px-2 py-1 rounded flex items-center gap-1">
                                             <FaTag /> {story.tags}
                                         </span>
                                     </div>
@@ -122,13 +122,13 @@ const ManageStories = () => {
                             <div className="mt-6 flex justify-end gap-4">
                                 <button
                                     onClick={() => handleEdit(story._id)}
-                                    className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded flex items-center gap-2"
+                                    className="bg-blue-600 hover:bg-blue-700 text-light px-4 py-2 rounded flex items-center gap-2"
                                 >
                                     <FaEdit /> Edit
                                 </button>
                                 <button
                                     onClick={() => handleDelete(story._id)}
-                                    className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded flex items-center gap-2"
+                                    className="bg-red-500 hover:bg-red-600 text-light px-4 py-2 rounded flex items-center gap-2"
                                 >
                                     <FaTrashAlt /> Delete
                                 </button>

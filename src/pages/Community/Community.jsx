@@ -39,7 +39,7 @@ const Community = () => {
     return (
         <section className="max-w-[1280px] mx-auto px-2 md:px-4 lg:px-0 py-16">
             <title>DanaFly - Community</title>
-            <h2 className="text-3xl font-bold text-[#00A99D] mb-10">Traveler's Stories</h2>
+            <h2 className="text-3xl font-bold text-light mb-10">Traveler's Stories</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
                 {stories.map((story) => (
@@ -55,7 +55,7 @@ const Community = () => {
 
                         <div className="absolute inset-0 bg-black/50 z-10 transition group-hover:bg-black/60"></div>
 
-                        <div className="relative z-20 h-full flex flex-col justify-center gap-5 p-6 text-white">
+                        <div className="relative z-20 h-full flex flex-col justify-center gap-5 p-6 text-light">
                             <div>
                                 <h3 className="text-xl font-bold">{story.title}</h3>
                                 <p className="italic text-sm mb-2">By {story.posterName}</p>

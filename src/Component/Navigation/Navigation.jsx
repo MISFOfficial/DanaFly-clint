@@ -14,7 +14,7 @@ const Navigation = () => {
     // //console.log(user)
 
     return (
-        <div className='flex justify-between items-center py-2 px-3 md:px-20  sticky top-0 z-1000 bg-white shadow-md'>
+        <div className='flex justify-between items-center py-2 px-3 md:px-20  sticky top-0 z-1000 bg-p1 shadow-md'>
 
             <Logo></Logo>
             

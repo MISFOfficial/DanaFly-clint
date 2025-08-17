@@ -210,7 +210,7 @@ const Register = () => {
                 {/* Submit */}
                 <button
                     type="submit"
-                    className="w-full h-12 bg-[#00A99D] text-white rounded-full font-bold text-sm hover:bg-[#3d7672] transition"
+                    className="w-full h-12 bg-[#00A99D] text-light rounded-full font-bold text-sm hover:bg-[#3d7672] transition"
                 >
                     Sign Up
                 </button>

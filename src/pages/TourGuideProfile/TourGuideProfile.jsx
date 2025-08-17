@@ -68,30 +68,30 @@ const TourGuideProfile = () => {
 
                 {/* Guide Info */}
                 <div className="flex-grow space-y-3">
-                    <h1 className="text-xl md:text-3xl font-bold text-[#00A99D] flex items-center gap-2">
+                    <h1 className="text-xl md:text-3xl font-bold text-light flex items-center gap-2">
                         <FaUserTie /> {guide.name}
                     </h1>
                     <p className="text-gray-600 text-sm md:text-lg text-center">{guide.motivation}</p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 mt-4">
                         <p className="flex items-center gap-2 text-sm md:text-lg">
-                            <HiOutlineLocationMarker className="text-[#00A99D]" />
+                            <HiOutlineLocationMarker className="text-light" />
                             <span><strong>Location:</strong> {guide.location}</span>
                         </p>
                         <p className="flex items-center gap-2 text-sm md:text-lg">
-                            <HiOutlinePhone className="text-[#00A99D]" />
+                            <HiOutlinePhone className="text-light" />
                             <span><strong>Phone:</strong> {guide.phone}</span>
                         </p>
                         <p className="flex items-center gap-2 text-sm md:text-lg">
-                            <HiOutlineMail className="text-[#00A99D]" />
+                            <HiOutlineMail className="text-light" />
                             <span><strong>Email:</strong> {guide.email}</span>
                         </p>
                         <p className="flex items-center gap-2 text-sm md:text-lg">
-                            <FaLanguage className="text-[#00A99D] text-wrap text-center" />
+                            <FaLanguage className="text-light text-wrap text-center" />
                             <span><strong>Languages:</strong> {guide.languages}</span>
                         </p>
                         <p className="flex items-center gap-2 text-sm md:text-lg">
-                            <HiOutlineUserGroup className="text-[#00A99D]" />
+                            <HiOutlineUserGroup className="text-light" />
                             <span><strong>Experience:</strong> {guide.experienceYears} years</span>
                         </p>
                         <p className="flex items-center gap-2 text-sm md:text-lg">
@@ -106,7 +106,7 @@ const TourGuideProfile = () => {
 
 
             <div className="mt-16">
-                <h2 className="text-xl md:text-2xl font-bold text-[#00A99D] mb-6 text-center md:text-start">Stories by {guide.name}</h2>
+                <h2 className="text-xl md:text-2xl font-bold text-light mb-6 text-center md:text-start">Stories by {guide.name}</h2>
                 {storiesByGuide.length > 0 ? <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {storiesByGuide.map((story) => (
                         <div
@@ -119,7 +119,7 @@ const TourGuideProfile = () => {
                                 className="w-full h-52 object-cover transform group-hover:scale-105 transition duration-300"
                             />
                             <div className="p-5">
-                                <h3 className="text-lg font-semibold text-[#00A99D] mb-2">
+                                <h3 className="text-lg font-semibold text-light mb-2">
                                     {story.title}
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-lg">{story.description}</p>

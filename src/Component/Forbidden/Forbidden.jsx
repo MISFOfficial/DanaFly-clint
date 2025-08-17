@@ -17,7 +17,7 @@ const Forbidden = () => {
                 </p>
                 <Link
                     to="/"
-                    className="inline-block px-6 py-3 bg-red-500 text-white font-semibold rounded-full shadow hover:bg-red-600 transition duration-300"
+                    className="inline-block px-6 py-3 bg-red-500 text-light font-semibold rounded-full shadow hover:bg-red-600 transition duration-300"
                 >
                     Back to Home
                 </Link>

@@ -52,7 +52,7 @@ const ManageUsers = () => {
 
     return (
         <div>
-            <h2 className="text-2xl font-semibold mb-4 text-[#00A99D]">Manage Users</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-light">Manage Users</h2>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
                 <input
@@ -74,7 +74,7 @@ const ManageUsers = () => {
 
             <div className="overflow-x-auto rounded-lg">
                 <table className="w-full border border-gray-200 rounded shadow-sm">
-                    <thead className="bg-[#00A99D] text-white">
+                    <thead className="bg-[#00A99D] text-light">
                         <tr>
                             <th className="p-4 border">#</th>
                             <th className="p-4 border">Name</th>
@@ -128,7 +128,7 @@ const ManageUsers = () => {
                     <button
                         key={i + 1}
                         onClick={() => paginate(i + 1)}
-                        className={`px-3 py-1 rounded ${currentPage === i + 1 ? 'bg-[#00A99D] text-white' : 'bg-gray-100 hover:bg-gray-300'}`}
+                        className={`px-3 py-1 rounded ${currentPage === i + 1 ? 'bg-[#00A99D] text-light' : 'bg-gray-100 hover:bg-gray-300'}`}
                     >
                         {i + 1}
                     </button>

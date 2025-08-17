@@ -74,7 +74,7 @@ const Trips = () => {
             <title>
                 DanaFly - Trips
             </title>
-            <h2 className="text-xl md:text-3xl font-bold text-[#00A99D] mb-10">Explore All Trips</h2>
+            <h2 className="text-xl md:text-3xl font-bold text-light mb-10">Explore All Trips</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {packages.map(pkg => (
@@ -87,10 +87,10 @@ const Trips = () => {
                         <div className="p-4">
                             <p className="text-sm text-gray-500 mb-1 uppercase">{pkg.type}</p>
                             <h3 className="text-xl font-semibold text-gray-800 mb-2">{pkg.packageName}</h3>
-                            <p className="text-[#00A99D] font-bold mb-4">${pkg.price}</p>
+                            <p className="text-light font-bold mb-4">${pkg.price}</p>
                             <Link to={`/packageDetails/${pkg._id}`}>
                                 <button
-                                    className="px-4 py-2 bg-[#00A99D] text-white rounded hover:bg-[#00796b] transition text-sm md:text-lg">
+                                    className="px-4 py-2 bg-[#00A99D] text-light rounded hover:bg-[#00796b] transition text-sm md:text-lg">
                                     View Details
                                 </button>
                             </Link>

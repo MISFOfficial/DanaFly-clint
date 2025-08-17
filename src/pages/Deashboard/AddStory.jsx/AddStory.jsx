@@ -111,7 +111,7 @@ const AddStory = () => {
     return (
         <div >
             <title>DanaFly - Deshboard/Add Storysr</title>
-            <h2 className="text-3xl font-bold text-[#00A99D] mb-6 text-start">Add Your Story</h2>
+            <h2 className="text-3xl font-bold text-light mb-6 text-start">Add Your Story</h2>
             <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="bg-white p-8 rounded-xl border-t-8 border-[#00A99D] shadow space-y-6"
@@ -236,7 +236,7 @@ const AddStory = () => {
                     <button
                         type="submit"
                         disabled={isUploading}
-                        className={`bg-[#00A99D] text-white px-6 py-2 rounded hover:bg-[#00796b] transition ${isUploading ? 'cursor-not-allowed' : ''}`}>
+                        className={`bg-[#00A99D] text-light px-6 py-2 rounded hover:bg-[#00796b] transition ${isUploading ? 'cursor-not-allowed' : ''}`}>
                         {/* {isUploading ? 'Uploading...' : 'Submit Story'} */}
                         Submit Story
                     </button>

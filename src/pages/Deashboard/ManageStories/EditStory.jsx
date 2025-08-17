@@ -101,7 +101,7 @@ const EditStory = () => {
                         <button
                             type="button"
                             onClick={() => handleRemovePhoto(img)}
-                            className="absolute top-0 right-0 bg-red-500 text-white p-1 text-xs rounded"
+                            className="absolute top-0 right-0 bg-red-500 text-light p-1 text-xs rounded"
                         >
                             ✕
                         </button>
@@ -114,7 +114,7 @@ const EditStory = () => {
             </div>
 
             <input type="file" multiple onChange={handleImageUpload} />
-            <button type="submit" disabled={isUploading} className="bg-[#00A99D] text-white px-4 py-2 rounded">
+            <button type="submit" disabled={isUploading} className="bg-[#00A99D] text-light px-4 py-2 rounded">
                 {isUploading ? 'Uploading...' : 'Update Story'}
             </button>
         </form>

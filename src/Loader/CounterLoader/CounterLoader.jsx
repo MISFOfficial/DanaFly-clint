@@ -7,7 +7,7 @@ const CounterLoader = () => {
             style={{ fontFamily: `"Plus Jakarta Sans", "Noto Sans", sans-serif` }}
         >
             <div className="max-w-6xl mx-auto px-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#00A99D]">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-light">
                     Trusted by Our Growing Community
                 </h2>
 
@@ -16,7 +16,7 @@ const CounterLoader = () => {
                     <div        
                         className="bg-white shadow-md rounded-lg p-6 text-center w-full animate-pulse"
                     >
-                        <h2 className="text-4xl font-bold text-[#00A99D] mb-2">
+                        <h2 className="text-4xl font-bold text-light mb-2">
                             0
                         </h2>
                         <p className="text-lg text-gray-700 font-medium">Total Users</p>
@@ -25,7 +25,7 @@ const CounterLoader = () => {
                     <div        
                         className="bg-white shadow-md rounded-lg p-6 text-center w-full animate-pulse"
                     >
-                        <h2 className="text-4xl font-bold text-[#00A99D] mb-2">
+                        <h2 className="text-4xl font-bold text-light mb-2">
                             0
                         </h2>
                         <p className="text-lg text-gray-700 font-medium">Registered Tour Guides</p>
@@ -34,7 +34,7 @@ const CounterLoader = () => {
                     <div        
                         className="bg-white shadow-md rounded-lg p-6 text-center w-full animate-pulse"
                     >
-                        <h2 className="text-4xl font-bold text-[#00A99D] mb-2">
+                        <h2 className="text-4xl font-bold text-light mb-2">
                             0
                         </h2>
                         <p className="text-lg text-gray-700 font-medium">Tour Packages Available</p>

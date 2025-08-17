@@ -16,13 +16,13 @@ const ProfileLoader = () => {
                     />
                     <div className="space-y-2">
                         <h3 className="text-xl font-semibold flex items-center gap-2">
-                            <FaUserEdit className="text-[#00A99D]" /> <span className='bg-gray-200 px-7 rounded-lg text-transparent '>none</span>
+                            <FaUserEdit className="text-light" /> <span className='bg-gray-200 px-7 rounded-lg text-transparent '>none</span>
                         </h3>
                         <p className="text-gray-600 flex items-center gap-2">
-                            <MdEmail className="text-[#00A99D]" /> <span className='bg-gray-200 px- rounded-lg text-transparent '>muksitul44@gmail.com</span>
+                            <MdEmail className="text-light" /> <span className='bg-gray-200 px- rounded-lg text-transparent '>muksitul44@gmail.com</span>
                         </p>
                         <p className="text-gray-600 flex items-center gap-2">
-                            <MdOutlineVerifiedUser className="text-[#00A99D]" /> <span className='bg-gray-200 px-7 rounded-lg text-transparent '>none</span>
+                            <MdOutlineVerifiedUser className="text-light" /> <span className='bg-gray-200 px-7 rounded-lg text-transparent '>none</span>
                         </p>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ const ProfileLoader = () => {
                     </button>
                     <button
 
-                        className="bg-white border border-[#00A99D] text-transparent px-5 py-2 rounded hover:bg-[#00A99D] hover:text-white transition w-full md:w-fit "
+                        className="bg-white border border-[#00A99D] text-transparent px-5 py-2 rounded hover:bg-[#00A99D] hover:text-light transition w-full md:w-fit "
                     >
                         Apply For Tour Guide
                     </button>

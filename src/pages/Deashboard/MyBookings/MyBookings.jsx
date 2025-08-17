@@ -71,11 +71,11 @@ const MyBookings = () => {
     return (
         <section>
             <title>DanaFly - Deshboard/My Bookings</title>
-            <h2 className="text-3xl font-bold text-[#00A99D] mb-5">My Bookings</h2>
+            <h2 className="text-3xl font-bold text-light mb-5">My Bookings</h2>
             <div className="overflow-x-auto rounded-lg">
                 <table className="min-w-full bg-white shadow">
                     <thead>
-                        <tr className="bg-[#00A99D] text-white text-left">
+                        <tr className="bg-[#00A99D] text-light text-left">
                             <th className="p-4">Package Name</th>
                             <th className="p-4">Tour Guide</th>
                             <th className="p-4">Tour Date</th>
@@ -115,13 +115,13 @@ const MyBookings = () => {
                                                     <>
                                                         <button
                                                             onClick={() => handlePay(booking._id)}
-                                                            className="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600"
+                                                            className="px-3 py-1 bg-green-500 text-light rounded hover:bg-green-600"
                                                         >
                                                             Pay
                                                         </button>
                                                         <button
                                                             onClick={() => handleCancelBooking(booking._id)}
-                                                            className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600"
+                                                            className="px-3 py-1 bg-red-500 text-light rounded hover:bg-red-600"
                                                         >
                                                             Cancel
                                                         </button>
@@ -151,7 +151,7 @@ const MyBookings = () => {
                         <button
                             key={i + 1}
                             onClick={() => handlePageChange(i + 1)}
-                            className={`px-3 py-1 border rounded ${currentPage === i + 1 ? 'bg-[#00A99D] text-white' : ''}`}
+                            className={`px-3 py-1 border rounded ${currentPage === i + 1 ? 'bg-[#00A99D] text-light' : ''}`}
                         >
                             {i + 1}
                         </button>

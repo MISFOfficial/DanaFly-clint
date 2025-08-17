@@ -54,7 +54,7 @@ const JoinAsTourGuide = () => {
                     <div className="flex justify-center mb-4">
                         <div className="w-10 h-10 border-4 border-t-[#00A99D] border-[#b2dfdb] rounded-full animate-spin"></div>
                     </div>
-                    <h2 className="text-xl font-semibold text-[#00A99D] mb-1">Loading...</h2>
+                    <h2 className="text-xl font-semibold text-light mb-1">Loading...</h2>
                     <p className="text-gray-600 text-sm">
                         Please wait while we check your application status.
                     </p>
@@ -70,7 +70,7 @@ const JoinAsTourGuide = () => {
     return (
         <section >
             <title>DanaFly - Deshboard/Join as Toure Guider</title>
-            <h1 className="text-3xl font-bold text-[#00A99D] mb-6 text-start">Join as a Tour Guide</h1>
+            <h1 className="text-3xl font-bold text-light mb-6 text-start">Join as a Tour Guide</h1>
             <div className="p-6 bg-white rounded shadow mt-5">
                 <p className="mb-6 text-gray-700">
                     Please fill out the application to become a tour guide on DanaFly.
@@ -162,7 +162,7 @@ const JoinAsTourGuide = () => {
 
                         <button
                             type="submit"
-                            className="w-full bg-[#00A99D] text-white py-3 rounded hover:bg-[#00796b] transition font-semibold"
+                            className="w-full bg-[#00A99D] text-light py-3 rounded hover:bg-[#00796b] transition font-semibold"
                         >
                             Submit Application
                         </button>
