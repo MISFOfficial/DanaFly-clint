@@ -56,7 +56,7 @@ const Profile = () => {
     return (
         <div className="dropdown dropdown-end ">
             <img tabIndex={0} role="button" className='object-cover h-13 w-13 rounded-full cursor-pointer' src={user.photoURL} alt="" />
-            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-50 md:w-80 p-4 shadow-sm mt-8 space-y-5 border-y-4 border-[#00A99D] ">
+            <ul tabIndex={0} className="dropdown-content menu  rounded-box z-1 w-50 md:w-80 p-4 shadow-sm mt-8 space-y-5 btn-border4 ">
                 <div className=' rounded-lg shadow-lg cta-btn flex flex-col justify-center items-center p-3'>
                     <img className='w-15 h-15 object-cover rounded-full cursor-pointer' src={user.photoURL} alt="" />
                     <h1 className='mt-3 text-light text-center'>{user.displayName}</h1>

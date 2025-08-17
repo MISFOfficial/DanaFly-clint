@@ -9,17 +9,17 @@ import MenuProfile from './MenuProfile';
 const Menu = () => {
     const {user}=useAuth()
     return (
-        <div className="drawer  w-fit lg:hidden z-[100]">
+        <div className="drawer w-fit lg:hidden z-[100]">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
                 {/* Page content here */}
                 <label htmlFor="my-drawer" className="cta-btn btn btn-primary drawer-button border-none"><HiMenuAlt3></HiMenuAlt3></label>
             </div>
-            <div className="drawer-side">
+            <div className="drawer-side ">
                 <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu bg-base-200 text-base-content min-h-full w-70 md:w-80 p-4">
+                <ul className="menu bg-p1 text-base-content min-h-full w-70 md:w-80 p-4">
                     {/* Sidebar content here */}
-                    <div className='flex items-end sticky  top-5 z-999'>
+                    <div className='flex items-end sticky  top-5 z-999  backdrop-blur-2xl '>
                         <Logo></Logo>
                     </div>
 

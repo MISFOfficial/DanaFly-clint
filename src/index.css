@@ -24,7 +24,6 @@ body {
       @apply bg-[#0A192F]
 }
 
-
 .text-light{
       @apply text-[#e5e0e0]
 }
@@ -47,4 +46,11 @@ body {
 }
 .btn-border2{
       @apply border-[#5b6ac3] border-t-10 
+}
+
+.btn-border3{
+      @apply border-[#5b6ac3] border-b-6 
+}
+.btn-border4{
+      @apply border-[#5b6ac3] border-y-6 border-x-1
 }
