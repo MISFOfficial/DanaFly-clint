@@ -57,7 +57,7 @@ const Banner = () => {
                                 className="w-full h-full object-cover"
                             />
                             {/* Slide title at bottom right */}
-                            <div className='absolute bg-[#0000006f] h-full w-full top-0'>
+                            <div className='absolute bg-[#0000009c] h-full w-full top-0'>
                             </div>
                             <div className="absolute bottom-4 right-4  bg-[#00A99D] text-white text-[8px] md:text-sm px-4 py-2 rounded shadow-md flex items-center gap-2">
                                 <FaLocationArrow></FaLocationArrow> {slide.title}
@@ -77,7 +77,7 @@ const Banner = () => {
                 }}
                 className="absolute h-full w-full top-0 flex flex-col text-white items-center justify-center px-3 md:px-20 z-20">
                 <div>
-                    <h1 className="font-extrabold text-md md:text-4xl title-font text-start">
+                    <h1 className="font-extrabold text-md md:text-4xl title-font text-start banner-text">
                         Explore Bangladesh with DanaFly – Your Ultimate Travel Guide
                     </h1>
                     <p className="mt-2 md:mt-5 text-[12px] md:text-lg">

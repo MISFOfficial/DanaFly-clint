@@ -5,5 +5,9 @@
 
 body {
       @apply bg-gray-100;
-      font-family: "Federant", serif;
+      font-family: "DM Serif Display", serif;
+}
+
+.banner-text {
+      font-family: "Borel", cursive;
 }
