@@ -86,12 +86,12 @@ const Banner = () => {
                     </p>
                     <div className="mt-5 md:mt-10 flex items-center gap-5">
                         <Link to='trips'>
-                            <button className="transition hover:scale-110 px-3 py-1 md:px-8 md:py-3 duration-500 border-white border-3 cursor-pointer text-[12px] md:text-[16px]">
+                            <button className="transition hover:scale-110 px-3 py-1 md:px-8 md:py-3 duration-500 border-white border-3 cursor-pointer text-[12px] md:text-[20px]">
                                 Book Now
                             </button>
                         </Link>
                         <Link to='/community'>
-                            <button className="transition hover:scale-110 px-3 py-1 md:px-8 md:py-3 bg-[#00A99D] text-white duration-500 border-[#00A99D] border-3 cursor-pointer text-[12px] md:text-[16px]">
+                            <button className="transition hover:scale-110 px-3 py-1 md:px-8 md:py-3 bg-[#00A99D] text-white duration-500 border-[#00A99D] border-3 cursor-pointer text-[12px] md:text-[20px]">
                                 Explore More
                             </button>
                         </Link>
