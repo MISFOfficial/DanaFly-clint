@@ -15,7 +15,7 @@ createRoot(document.getElementById('root')).render(
     <ToastContainer></ToastContainer>
     <QueryClientProvider client={queryClint}>
       <div  
-      className='bg-gray-100 '>
+      className=''>
         <AuthProvider>
           <RouterProvider router={router}>
           </RouterProvider>

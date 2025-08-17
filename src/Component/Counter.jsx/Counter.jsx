@@ -70,7 +70,6 @@ const Counter = () => {
         <section
             ref={ref}
             className="py-16 bg-blue-100"
-            style={{ fontFamily: `"Plus Jakarta Sans", "Noto Sans", sans-serif` }}
         >
             <div className="max-w-6xl mx-auto px-6">
                 <h2 className="text-xl md:text-4xl font-bold text-center mb-10 text-[#00A99D]">
