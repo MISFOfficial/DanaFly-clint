@@ -108,7 +108,7 @@ const Register = () => {
 
     return (
         <div
-            className="min-h-screen flex items-center justify-center bg-white p-4 md:p-0"
+            className="min-h-screen flex items-center justify-center bg-p1 p-4 md:p-0"
         >
             <ToastContainer position="top-center" autoClose={3000} />
             <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-lg">
@@ -116,37 +116,37 @@ const Register = () => {
                     <Link to="/"><Logo /></Link>
                 </div>
 
-                <h2 className="text-[#1b130d] text-center text-2xl font-bold  mb-6">
+                <h2 className="text-light text-center text-2xl font-bold  mb-6">
                     Create Your DanaFly Account
                 </h2>
 
                 {/* Name */}
                 <div className="mb-4">
-                    <label className="block text-[#1b130d] font-medium mb-2">Full Name</label>
+                    <label className="block text-light font-medium mb-2">Full Name</label>
                     <input
                         type="text"
                         {...register('name', { required: 'Name is required' })}
                         placeholder="Enter your full name"
-                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 text-[#1b130d] placeholder:text-[#9a6b4c] focus:outline-none"
+                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 text-light placeholder:text-[#9a6b4c] focus:outline-none"
                     />
                     {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
                 </div>
 
                 {/* Email */}
                 <div className="mb-4">
-                    <label className="block text-[#1b130d] font-medium mb-2">Email</label>
+                    <label className="block text-light font-medium mb-2">Email</label>
                     <input
                         type="email"
                         {...register('email', { required: 'Email is required' })}
                         placeholder="Enter your email"
-                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 text-[#1b130d] placeholder:text-[#9a6b4c] focus:outline-none"
+                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 text-light placeholder:text-[#9a6b4c] focus:outline-none"
                     />
                     {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
                 </div>
 
                 {/* Profile Picture */}
                 <div className="mb-4">
-                    <label className="block text-[#1b130d] font-medium mb-2">Profile Picture</label>
+                    <label className="block text-light font-medium mb-2">Profile Picture</label>
                     <div className="relative">
                         <input
                             type="file"
@@ -162,7 +162,7 @@ const Register = () => {
 
                 {/* Password */}
                 <div className="mb-4">
-                    <label className="block text-[#1b130d] font-medium mb-2">Password</label>
+                    <label className="block text-light font-medium mb-2">Password</label>
                     <div className="relative">
                         <input
                             type={showPassword ? 'text' : 'password'}
@@ -172,7 +172,7 @@ const Register = () => {
                                 pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).*$/
                             })}
                             placeholder="Enter your password"
-                            className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 pr-10 text-[#1b130d] placeholder:text-[#9a6b4c] focus:outline-none"
+                            className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 pr-10 text-light placeholder:text-[#9a6b4c] focus:outline-none"
                         />
                         <span
                             onClick={() => setShowPassword(!showPassword)}
@@ -186,7 +186,7 @@ const Register = () => {
 
                 {/* Confirm Password */}
                 <div className="mb-6">
-                    <label className="block text-[#1b130d] font-medium mb-2">Confirm Password</label>
+                    <label className="block text-light font-medium mb-2">Confirm Password</label>
                     <div className="relative">
                         <input
                             type={showConfirm ? 'text' : 'password'}
@@ -195,7 +195,7 @@ const Register = () => {
                                 validate: value => value === password || 'Passwords do not match'
                             })}
                             placeholder="Confirm your password"
-                            className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 pr-10 text-[#1b130d] placeholder:text-[#9a6b4c] focus:outline-none"
+                            className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 pr-10 text-light placeholder:text-[#9a6b4c] focus:outline-none"
                         />
                         <span
                             onClick={() => setShowConfirm(!showConfirm)}
@@ -210,7 +210,7 @@ const Register = () => {
                 {/* Submit */}
                 <button
                     type="submit"
-                    className="w-full h-12 bg-[#00A99D] text-light rounded-full font-bold text-sm hover:bg-[#3d7672] transition"
+                    className="w-full h-12 cta-btn text-light rounded-full font-bold text-sm hover:bg-[#3d7672] transition"
                 >
                     Sign Up
                 </button>

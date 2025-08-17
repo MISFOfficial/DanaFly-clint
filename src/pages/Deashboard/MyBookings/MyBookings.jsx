@@ -73,9 +73,9 @@ const MyBookings = () => {
             <title>DanaFly - Deshboard/My Bookings</title>
             <h2 className="text-3xl font-bold text-light mb-5">My Bookings</h2>
             <div className="overflow-x-auto rounded-lg">
-                <table className="min-w-full bg-white shadow">
+                <table className="min-w-full bg-p1 shadow">
                     <thead>
-                        <tr className="bg-[#00A99D] text-light text-left">
+                        <tr className="cta-btn text-light text-left">
                             <th className="p-4">Package Name</th>
                             <th className="p-4">Tour Guide</th>
                             <th className="p-4">Tour Date</th>
@@ -151,7 +151,7 @@ const MyBookings = () => {
                         <button
                             key={i + 1}
                             onClick={() => handlePageChange(i + 1)}
-                            className={`px-3 py-1 border rounded ${currentPage === i + 1 ? 'bg-[#00A99D] text-light' : ''}`}
+                            className={`px-3 py-1 border rounded ${currentPage === i + 1 ? 'cta-btn text-light' : ''}`}
                         >
                             {i + 1}
                         </button>

@@ -50,12 +50,12 @@ const JoinAsTourGuide = () => {
     if (isLoading) {
         return (
             <section className="px-4 py-20 flex items-center justify-center">
-                <div className="p-6 rounded-lg shadow-lg bg-white text-center max-w-md w-full">
+                <div className="p-6 rounded-lg shadow-lg bg-p1 text-center max-w-md w-full">
                     <div className="flex justify-center mb-4">
                         <div className="w-10 h-10 border-4 border-t-[#00A99D] border-[#b2dfdb] rounded-full animate-spin"></div>
                     </div>
                     <h2 className="text-xl font-semibold text-light mb-1">Loading...</h2>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-light3 text-sm">
                         Please wait while we check your application status.
                     </p>
                 </div>
@@ -71,8 +71,8 @@ const JoinAsTourGuide = () => {
         <section >
             <title>DanaFly - Deshboard/Join as Toure Guider</title>
             <h1 className="text-3xl font-bold text-light mb-6 text-start">Join as a Tour Guide</h1>
-            <div className="p-6 bg-white rounded shadow mt-5">
-                <p className="mb-6 text-gray-700">
+            <div className="p-6 bg-p1 rounded shadow mt-5">
+                <p className="mb-6 text-light">
                     Please fill out the application to become a tour guide on DanaFly.
                 </p>
 
@@ -162,7 +162,7 @@ const JoinAsTourGuide = () => {
 
                         <button
                             type="submit"
-                            className="w-full bg-[#00A99D] text-light py-3 rounded hover:bg-[#00796b] transition font-semibold"
+                            className="w-full cta-btn text-light py-3 rounded hover:bg-[#00796b] transition font-semibold"
                         >
                             Submit Application
                         </button>

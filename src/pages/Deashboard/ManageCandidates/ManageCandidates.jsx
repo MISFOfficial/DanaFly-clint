@@ -67,7 +67,7 @@ const ManageCandidates = () => {
 
             <div className="overflow-x-auto">
                 <table className="w-full table-auto text-sm md:text-base border-collapse">
-                    <thead className="bg-[#00A99D] text-light">
+                    <thead className="cta-btn text-light">
                         <tr>
                             <th className="p-2 border">#</th>
                             <th className="p-2 border">Name</th>
@@ -151,7 +151,7 @@ const ManageCandidates = () => {
                     <button
                         key={i + 1}
                         onClick={() => paginate(i + 1)}
-                        className={`px-3 py-1 rounded ${currentPage === i + 1 ? 'bg-[#00A99D] text-light' : 'bg-gray-100 hover:bg-gray-300'
+                        className={`px-3 py-1 rounded ${currentPage === i + 1 ? 'cta-btn text-light' : 'bg-gray-100 hover:bg-gray-300'
                             }`}
                     >
                         {i + 1}

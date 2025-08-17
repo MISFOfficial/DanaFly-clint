@@ -100,7 +100,7 @@ const ManageProfile = () => {
         <section className=" ">
             <h2 className="text-3xl font-bold  text-light mb-5">Welcome, {userInfo?.name || 'User'} 👋</h2>
 
-            <div className="bg-white shadow rounded-lg p-6 space-y-6">
+            <div className="bg-p1 shadow rounded-lg p-6 space-y-6">
                 <div className="flex flex-col md:flex-row items-center gap-6">
                     <img
                         src={userInfo?.photoURL}
@@ -111,10 +111,10 @@ const ManageProfile = () => {
                         <h3 className="text-xl font-semibold flex items-center gap-2">
                             <FaUserEdit className="text-light" /> {userInfo?.name}
                         </h3>
-                        <p className="text-gray-600 flex items-center gap-2">
+                        <p className="text-light3 flex items-center gap-2">
                             <MdEmail className="text-light" /> {userInfo?.email}
                         </p>
-                        <p className="text-gray-600 flex items-center gap-2">
+                        <p className="text-light3 flex items-center gap-2">
                             <MdOutlineVerifiedUser className="text-light" /> Role: <span className="uppercase font-bold">{userInfo?.role}</span>
                         </p>
                     </div>
@@ -123,14 +123,14 @@ const ManageProfile = () => {
                 <div className="flex gap-4 ">
                     <button
                         onClick={() => setIsModalOpen(true)}
-                        className="bg-[#00A99D] text-light px-5 py-2 rounded hover:bg-[#00796b] transition w-full md:w-fit"
+                        className="cta-btn text-light px-5 py-2 rounded hover:bg-[#00796b] transition w-full md:w-fit"
                     >
                         Edit Profile
                     </button>
                     {userInfo?.role !== 'admin' &&
                         <button
                             onClick={() => navigate('/deshboard/asTourGuide')}
-                            className="bg-white border border-[#00A99D] text-light px-5 py-2 rounded hover:bg-[#00A99D] hover:text-light transition w-full md:w-fit"
+                            className="bg-p1 border border-[#00A99D] text-light px-5 py-2 rounded hover:cta-btn hover:text-light transition w-full md:w-fit"
                         >
                             Apply For Tour Guide
                         </button>}
@@ -140,7 +140,7 @@ const ManageProfile = () => {
             {/* Edit Modal */}
             {isModalOpen && (
                 <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center px-4">
-                    <div className="bg-white p-6 rounded-xl w-full max-w-lg">
+                    <div className="bg-p1 p-6 rounded-xl w-full max-w-lg">
                         <h3 className="text-xl font-bold text-light mb-4">Edit Profile</h3>
 
                         <form onSubmit={handleSubmit(handleSave)} className="space-y-4">
@@ -157,7 +157,7 @@ const ManageProfile = () => {
 
                             {/* Profile Picture */}
                             <div className="mb-4">
-                                <label className="block text-[#1b130d] font-medium mb-2">Profile Picture</label>
+                                <label className="block text-light font-medium mb-2">Profile Picture</label>
                                 <div className="relative">
                                     <input
                                         type="file"
@@ -199,7 +199,7 @@ const ManageProfile = () => {
                                 </button>
                                 <button
                                     type="submit"
-                                    className="px-4 py-2 bg-[#00A99D] text-light rounded hover:bg-[#00796b]"
+                                    className="px-4 py-2 cta-btn text-light rounded hover:bg-[#00796b]"
                                 >
                                     Save Changes
                                 </button>

@@ -59,7 +59,7 @@ const Banner = () => {
                             {/* Slide title at bottom right */}
                             <div className='absolute bg-[#0000009c] h-full w-full top-0'>
                             </div>
-                            <div className="absolute bottom-4 right-4  bg-[#00A99D] text-light text-[8px] md:text-sm px-4 py-2 rounded shadow-md flex items-center gap-2">
+                            <div className="absolute bottom-4 right-4  cta-btn text-light text-[8px] md:text-sm px-4 py-2 rounded shadow-md flex items-center gap-2">
                                 <FaLocationArrow></FaLocationArrow> {slide.title}
                             </div>
                         </div>

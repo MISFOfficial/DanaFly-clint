@@ -7,7 +7,7 @@ const ProfileLoader = () => {
 
         <div className=' p-4 md:p-12'>
              <h2 className="text-3xl font-bold  text-transparent mb-5 bg-gray-200 rounded-lg ">Welcome, 👋 </h2>
-            <div className="bg-white shadow rounded-lg p-6 space-y-6 animate-pulse">
+            <div className="bg-p1 shadow rounded-lg p-6 space-y-6 animate-pulse">
                 <div className="flex flex-col md:flex-row items-center gap-6">
                     <img
                         src='https://www.iprcenter.gov/image-repository/blank-profile-picture.png/@@images/image.png'
@@ -18,10 +18,10 @@ const ProfileLoader = () => {
                         <h3 className="text-xl font-semibold flex items-center gap-2">
                             <FaUserEdit className="text-light" /> <span className='bg-gray-200 px-7 rounded-lg text-transparent '>none</span>
                         </h3>
-                        <p className="text-gray-600 flex items-center gap-2">
+                        <p className="text-light3 flex items-center gap-2">
                             <MdEmail className="text-light" /> <span className='bg-gray-200 px- rounded-lg text-transparent '>muksitul44@gmail.com</span>
                         </p>
-                        <p className="text-gray-600 flex items-center gap-2">
+                        <p className="text-light3 flex items-center gap-2">
                             <MdOutlineVerifiedUser className="text-light" /> <span className='bg-gray-200 px-7 rounded-lg text-transparent '>none</span>
                         </p>
                     </div>
@@ -29,13 +29,13 @@ const ProfileLoader = () => {
 
                 <div className="flex gap-4 ">
                     <button
-                        className="bg-[#00A99D]  px-5 py-2 rounded hover:bg-[#00796b] transition w-full md:w-fit text-transparent "
+                        className="cta-btn  px-5 py-2 rounded hover:bg-[#00796b] transition w-full md:w-fit text-transparent "
                     >
                         Edit Profile
                     </button>
                     <button
 
-                        className="bg-white border border-[#00A99D] text-transparent px-5 py-2 rounded hover:bg-[#00A99D] hover:text-light transition w-full md:w-fit "
+                        className="bg-p1 border border-[#00A99D] text-transparent px-5 py-2 rounded hover:cta-btn hover:text-light transition w-full md:w-fit "
                     >
                         Apply For Tour Guide
                     </button>

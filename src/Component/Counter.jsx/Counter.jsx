@@ -69,10 +69,11 @@ const Counter = () => {
     return (
         <section
             ref={ref}
-            className="py-16"
+            className="py-16 bg-p1"
+            
         >
             <div className="max-w-6xl mx-auto px-6">
-                <h2 className="text-xl md:text-4xl font-bold text-center mb-10 text-light">
+                <h2 className="text-xl md:text-4xl font-bold text-center mb-10 text-light3">
                     Trusted by Our Growing Community
                 </h2>
 
@@ -82,7 +83,7 @@ const Counter = () => {
                             key={index}
                             className="bg-p2 shadow-md rounded-lg p-6 text-center w-full "
                         >
-                            <h2 className="text-xl md:text-4xl font-bold text-light mb-2">
+                            <h2 className="text-xl md:text-4xl font-bold text-light3 mb-2">
                                 {startCounter ? (
                                     <CountUp
                                         end={stat.value}
@@ -93,7 +94,7 @@ const Counter = () => {
                                     '0'
                                 )}
                             </h2>
-                            <p className="text-sm md:text-lg text-gray-700 font-medium">{stat.label}</p>
+                            <p className="text-sm md:text-lg text-light3 font-medium">{stat.label}</p>
                         </div>
                     ))}
                 </div>

@@ -27,15 +27,15 @@ const Testimonials = () => {
                 {testimonials.slice(0, 3).map((t, index) => {
                     const rating = parseInt(t.rating) || 0;
                     return (
-                        <div key={index} className="bg-white rounded-xl shadow-lg p-5 flex flex-col items-center text-center">
-                            <img src={t.photo[0]} alt={t.posterName} className="w-20 h-20 rounded-full border-4 border-[#00A99D] mb-3 object-cover" />
+                        <div key={index} className="bg-p1 rounded-xl shadow-lg p-5 flex flex-col items-center text-center">
+                            <img src={t.photo[0]} alt={t.posterName} className="w-20 h-20 rounded-full mb-3 object-cover" />
                             <h3 className="text-lg font-semibold text-light">{t.posterName}</h3>
-                            <p className="text-gray-600 my-2 text-sm md:text-lg">{t.description}</p>
+                            <p className="text-light3 my-2 text-sm md:text-lg">{t.description}</p>
                             <div className="flex items-center gap-1 mt-2">
                                 {[...Array(rating)].map((_, i) => (
-                                    <FaStar key={i} className="text-yellow-500" />
+                                    <FaStar key={i} className="text-light" />
                                 ))}
-                                <span className="text-sm text-gray-600">({rating})</span>
+                                <span className="text-sm text-light">({rating})</span>
                             </div>
                         </div>
                     );

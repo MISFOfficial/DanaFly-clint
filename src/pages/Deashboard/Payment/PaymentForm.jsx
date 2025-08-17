@@ -121,7 +121,7 @@ const PaymentForm = () => {
         <div className='min-h-screen border flex flex-col justify-center '>
             <div className=" md:min-w-xl mx-auto flex flex-col">
                 <h2 className="text-2xl font-bold text-light mb-6">Complete Payment</h2>
-                <form onSubmit={handleSubmit} className="space-y-4 bg-white p-6 shadow rounded">
+                <form onSubmit={handleSubmit} className="space-y-4 bg-p1 p-6 shadow rounded">
                     <CardElement
                         options={{
                             style: {
@@ -141,7 +141,7 @@ const PaymentForm = () => {
                     <button
                         type="submit"
                         disabled={!stripe}
-                        className="w-full bg-[#00A99D] text-light py-2 rounded font-semibold hover:bg-[#00796b] transition"
+                        className="w-full cta-btn text-light py-2 rounded font-semibold hover:bg-[#00796b] transition"
                     >
                         {processing ? 'Processing...' : `Pay Now ${amount} BDT`}
                     </button>

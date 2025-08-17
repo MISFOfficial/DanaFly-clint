@@ -21,7 +21,7 @@ const Trips = () => {
     //console.log(packages)
 
     if (isLoading) {
-        return <p className="text-center py-20 text-gray-600">Loading packages...</p>;
+        return <p className="text-center py-20 text-light3">Loading packages...</p>;
     }
 
     // const packages = [
@@ -78,7 +78,7 @@ const Trips = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {packages.map(pkg => (
-                    <div key={pkg._id} className="bg-white border-b-4 border-[#00A99D] rounded-lg shadow-md overflow-hidden">
+                    <div key={pkg._id} className="bg-p1 border-b-4 border-[#00A99D] rounded-lg shadow-md overflow-hidden">
                         <img
                             src={pkg?.photo}
                             alt={pkg.packageName}
@@ -86,11 +86,11 @@ const Trips = () => {
                         />
                         <div className="p-4">
                             <p className="text-sm text-gray-500 mb-1 uppercase">{pkg.type}</p>
-                            <h3 className="text-xl font-semibold text-gray-800 mb-2">{pkg.packageName}</h3>
+                            <h3 className="text-xl font-semibold text-lightmb-2">{pkg.packageName}</h3>
                             <p className="text-light font-bold mb-4">${pkg.price}</p>
                             <Link to={`/packageDetails/${pkg._id}`}>
                                 <button
-                                    className="px-4 py-2 bg-[#00A99D] text-light rounded hover:bg-[#00796b] transition text-sm md:text-lg">
+                                    className="px-4 py-2 cta-btn text-light rounded hover:bg-[#00796b] transition text-sm md:text-lg">
                                     View Details
                                 </button>
                             </Link>

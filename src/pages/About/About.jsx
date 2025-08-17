@@ -40,16 +40,16 @@ const About = () => {
             <h1 className="text-xl md:text-4xl font-bold text-light mb-6">About the Developer</h1>
 
             {/* Personal Info */}
-            <div className="bg-white border-t-6 border-[#00A99D] rounded-xl shadow-lg p-6 md:p-10 mb-12">
+            <div className="bg-p1 border-t-6 border-[#00A99D] rounded-xl shadow-lg p-6 md:p-10 mb-12">
                 <h2 className="text-lg md:text-2xl font-semibold mb-3">👋 Hello, I'm <span className="text-light">Muksitul Islam</span></h2>
-                <p className="text-gray-700 leading-relaxed text-sm md:text-lg">
+                <p className="text-light leading-relaxed text-sm md:text-lg">
                     I am a self-motivated full-stack web developer specialized in building efficient, scalable, and modern web applications using the <strong>MERN Stack</strong>. I thrive on solving real-world problems with clean code and intuitive design.
                 </p>
-                <p className="mt-4 text-gray-700 text-sm md:text-lg">
+                <p className="mt-4 text-light text-sm md:text-lg">
                     I'm always eager to learn new technologies and collaborate on innovative projects. I have completed several full-stack projects including dashboard systems, parcel tracking, restaurant apps, and travel management platforms.
                 </p>
 
-                <div className="mt-6 space-y-2 text-gray-600 text-[12px] md:text-lg">
+                <div className="mt-6 space-y-2 text-light3 text-[12px] md:text-lg">
                     <p className="flex items-center gap-2"><FaEnvelope className="text-light" /> <strong>Email:</strong> muksitul44@gmail.com</p>
                     <p className="flex items-center gap-2"><FaMapMarkerAlt className="text-light" /> <strong>Location:</strong>Dhaka, Bangladesh</p>
                     <p><strong className='flex items-center gap-2'><GiSkills className="text-light"></GiSkills> Skills:</strong></p>
@@ -58,7 +58,7 @@ const About = () => {
                             'React', 'Node.js', 'MongoDB', 'Express.js', 'Firebase',
                             'Tailwind CSS', 'JWT', 'Stripe', 'React Router', 'Axios', 'Framer Motion', 'Lottie', 'React Query'
                         ].map((tech, idx) => (
-                            <span key={idx} className="bg-[#00A99D]/10 text-[#00796b] px-3 py-1 rounded-full text-sm">
+                            <span key={idx} className="cta-btn/10 text-light px-3 py-1 rounded-full text-sm">
                                 {tech}
                             </span>
                         ))}
@@ -67,7 +67,7 @@ const About = () => {
             </div>
 
             {/* Projects Section */}
-            <div className="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <div className="bg-p1 rounded-xl shadow-lg p-6 md:p-10">
                 <h2 className=" text-lg md:text-2xl font-semibold text-light mb-4">🚀 My Projects</h2>
                 <ul className="space-y-6">
                     {projects.map(project => (
@@ -86,7 +86,7 @@ const About = () => {
                                     href={project.client}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-1 text-gray-700 hover:underline"
+                                    className="flex items-center gap-1 text-light hover:underline"
                                 >
                                     <FaGithub /> Client Repo
                                 </a>
@@ -94,7 +94,7 @@ const About = () => {
                                     href={project.server}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-1 text-gray-700 hover:underline"
+                                    className="flex items-center gap-1 text-light hover:underline"
                                 >
                                     <FaGithub /> Server Repo
                                 </a>

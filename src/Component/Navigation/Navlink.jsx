@@ -59,8 +59,8 @@ const Navlink = () => {
                     to="/"
                     className={({ isActive }) =>
                         isActive
-                            ? 'bg-[#00A99D] text-light p-2 rounded-md delay-100'
-                            : 'p-2 text-[#1b130d] hover:text-light '
+                            ? 'cta-btn text-light p-2 rounded-md delay-100'
+                            : 'p-2 text-light hover:text-light '
                     }
                 >
                     Home
@@ -71,8 +71,8 @@ const Navlink = () => {
                     to="/community"
                     className={({ isActive }) =>
                         isActive
-                            ? 'bg-[#00A99D] text-light p-2 rounded-md'
-                            : 'p-2 text-[#1b130d] hover:text-light'
+                            ? 'cta-btn text-light p-2 rounded-md'
+                            : 'p-2 text-light hover:text-light'
                     }
                 > 
                     Community
@@ -83,8 +83,8 @@ const Navlink = () => {
                     to="/trips"
                     className={({ isActive }) =>
                         isActive
-                            ? 'bg-[#00A99D] text-light p-2 rounded-md'
-                            : 'p-2 text-[#1b130d] hover:text-light'
+                            ? 'cta-btn text-light p-2 rounded-md'
+                            : 'p-2 text-light hover:text-light'
                     }
                 > 
                     Trips
@@ -95,8 +95,8 @@ const Navlink = () => {
                     to="/about"
                     className={({ isActive }) =>
                         isActive
-                            ? 'bg-[#00A99D] text-light p-2 rounded-md'
-                            : 'p-2 text-[#1b130d] hover:text-light'
+                            ? 'cta-btn text-light p-2 rounded-md'
+                            : 'p-2 text-light hover:text-light'
                     }
                 >
                    
@@ -113,8 +113,8 @@ const Navlink = () => {
                             to="/deshboard"
                             className={({ isActive }) =>
                                 isActive
-                                    ? 'bg-[#00A99D] text-light p-2 rounded-md'
-                                    : 'p-2 text-[#1b130d] hover:text-light'
+                                    ? 'cta-btn text-light p-2 rounded-md'
+                                    : 'p-2 text-light hover:text-light'
                             }
                         >
                             Deshboard
@@ -125,8 +125,8 @@ const Navlink = () => {
                             to="/*"
                             className={({ isActive }) =>
                                 isActive
-                                    ? 'bg-[#00A99D] text-light p-2 rounded-md'
-                                    : 'p-2 text-[#1b130d] hover:text-light'
+                                    ? 'cta-btn text-light p-2 rounded-md'
+                                    : 'p-2 text-light hover:text-light'
                             }
                         >
                             Offer Announcement
@@ -137,8 +137,8 @@ const Navlink = () => {
                             to="/*"
                             className={({ isActive }) =>
                                 isActive
-                                    ? 'bg-[#00A99D] text-light p-2 rounded-md'
-                                    : 'p-2 text-[#1b130d] hover:text-light'
+                                    ? 'cta-btn text-light p-2 rounded-md'
+                                    : 'p-2 text-light hover:text-light'
                             }
                         >
                             Setting

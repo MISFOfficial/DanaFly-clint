@@ -29,12 +29,12 @@ const ManageStories = () => {
          return (
             <section className="px-4 py-20 flex items-center justify-center">
                 <title>DanaFly - Deshboard/Manage Story</title>
-                <div className="p-6 rounded-lg shadow-lg bg-white text-center max-w-md w-full">
+                <div className="p-6 rounded-lg shadow-lg bg-p1 text-center max-w-md w-full">
                     <div className="flex justify-center mb-4">
                         <div className="w-10 h-10 border-4 border-t-[#00A99D] border-[#b2dfdb] rounded-full animate-spin"></div>
                     </div>
                     <h2 className="text-xl font-semibold text-light mb-1">Loading...</h2>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-light3 text-sm">
                         Please wait while we check your application status.
                     </p>
                 </div>
@@ -85,7 +85,7 @@ const ManageStories = () => {
             ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {stories.map((story) => (
-                        <div key={story.id} className="bg-white rounded-lg shadow-md overflow-hidden p-4">
+                        <div key={story.id} className="bg-p1 rounded-lg shadow-md overflow-hidden p-4">
                             {/* Images */}
                             {story.photo?.length > 0 && (
                                 <div className="flex gap-2 overflow-x-auto scroll-auto pb-2">
@@ -103,7 +103,7 @@ const ManageStories = () => {
                             {/* Story Info */}
                             <div className="mt-4">
                                 <h2 className="text-xl font-bold text-light">{story.title}</h2>
-                                <p className="text-gray-700 mt-2">{story.description}</p>
+                                <p className="text-light mt-2">{story.description}</p>
 
                                 <p className="text-sm text-gray-500 mt-2 flex items-center">
                                     <FaMapMarkerAlt className="mr-1" /> {story.location}
@@ -111,7 +111,7 @@ const ManageStories = () => {
 
                                 {story.tags?.length > 0 && (
                                     <div className="mt-3 flex flex-wrap gap-2 text-sm">
-                                        <span className="bg-[#00A99D] text-light px-2 py-1 rounded flex items-center gap-1">
+                                        <span className="cta-btn text-light px-2 py-1 rounded flex items-center gap-1">
                                             <FaTag /> {story.tags}
                                         </span>
                                     </div>

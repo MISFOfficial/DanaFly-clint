@@ -4,7 +4,7 @@ import loader from '../../assets/Loader.json';
 
 const Loder = () => {
     return (
-        <div className="min-h-screen flex justify-center items-center bg-white px-4">
+        <div className="min-h-screen flex justify-center items-center bg-p1 px-4">
             <div className="w-40 md:w-100">
                 <Lottie animationData={loader} loop={true} />
             </div>

@@ -73,8 +73,8 @@ const MyAssignedTours = () => {
             <h2 className="text-2xl font-bold text-light mb-6">My Assigned Tours</h2>
 
             <div className="overflow-x-auto rounded-lg">
-                <table className="min-w-full bg-white">
-                    <thead className="bg-[#00A99D] text-light">
+                <table className="min-w-full bg-p1">
+                    <thead className="cta-btn text-light">
                         <tr>
                             <th className="py-3 px-4 text-left">Package Name</th>
                             <th className="py-3 px-4 text-left">Tourist Name</th>
@@ -142,7 +142,7 @@ const MyAssignedTours = () => {
                     <button
                         key={pageNum + 1}
                         onClick={() => setCurrentPage(pageNum + 1)}
-                        className={`px-3 py-1 rounded ${currentPage === pageNum + 1 ? 'bg-[#00A99D] text-light' : 'bg-gray-200 hover:bg-gray-300'}`}
+                        className={`px-3 py-1 rounded ${currentPage === pageNum + 1 ? 'cta-btn text-light' : 'bg-gray-200 hover:bg-gray-300'}`}
                     >
                         {pageNum + 1}
                     </button>

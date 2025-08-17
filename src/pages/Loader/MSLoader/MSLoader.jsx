@@ -6,7 +6,7 @@ const MSLoader = () => {
         <h1 className="text-3xl font-bold text-start text-light mb-5">Manage Your Stories</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* 1 */}
-            <div  className="bg-white rounded-lg shadow-mdp-4">
+            <div  className="bg-p1 rounded-lg shadow-mdp-4">
                 {/* Images */}
                 <div className="flex gap-2 overflow-x-auto scroll-auto pb-2">
                     <div className="h-28 w-36 object-cover rounded bg-gray-700 ">
@@ -44,7 +44,7 @@ const MSLoader = () => {
                 </div>
             </div>
             {/* 2 */}
-            <div  className="bg-white rounded-lg shadow-md overflow-hidden p-4">
+            <div  className="bg-p1 rounded-lg shadow-md overflow-hidden p-4">
                 {/* Images */}
                 <div className="flex gap-2 overflow-x-auto scroll-auto pb-2">
                     <div className="h-28 w-36 object-cover rounded bg-gray-700 ">
@@ -83,7 +83,7 @@ const MSLoader = () => {
                 </div>
             </div>
             {/* 3 */}
-            <div  className="bg-white rounded-lg shadow-md overflow-hidden p-4">
+            <div  className="bg-p1 rounded-lg shadow-md overflow-hidden p-4">
                 {/* Images */}
                 <div className="flex gap-2 overflow-x-auto scroll-auto pb-2">
                     <div className="h-28 w-36 object-cover rounded bg-gray-700 ">

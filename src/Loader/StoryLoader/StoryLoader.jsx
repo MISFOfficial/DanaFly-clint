@@ -69,7 +69,7 @@ const StoryLoader = () => {
             <div className="text-center">
                 <button
                 
-                    className="px-8 py-3 bg-[#00A99D] text-light font-semibold rounded-full hover:bg-[#00796b] transition"
+                    className="px-8 py-3 cta-btn text-light font-semibold rounded-full hover:bg-[#00796b] transition"
                 >
                     All Stories
                 </button>

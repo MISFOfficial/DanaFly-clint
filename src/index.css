@@ -8,26 +8,43 @@ body {
       font-family: "Signika Negative", sans-serif;
 }
 
+.bg-2{
+      @apply bg-[#e5e0e0];
+}
+
 .banner-text {
       font-family: "Borel", cursive;
 }
 
 .bg-p1{
-      @apply bg-[#1E90FF]
+      @apply bg-[#11376f]
 }
 
 .bg-p2{
-      @apply bg-[#64FFDA]
+      @apply bg-[#0A192F]
 }
+
 
 .text-light{
-      @apply text-[#FFFFFF]
+      @apply text-[#e5e0e0]
 }
+
+.text-light2{
+      @apply text-[#11376f]
+}
+
+.text-light3{
+      @apply text-[#b6b8bb]
+}
+
 
 .cta-btn{
-      @apply bg-[#FF4C60] 
+      @apply bg-[#5b6ac3] 
 }
-
+ 
 .btn-border{
-      @apply border-[#FF4C60] border-3
+      @apply border-[#5b6ac3] border-3
+}
+.btn-border2{
+      @apply border-[#5b6ac3] border-t-10 
 }

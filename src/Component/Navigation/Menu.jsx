@@ -13,7 +13,7 @@ const Menu = () => {
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
                 {/* Page content here */}
-                <label htmlFor="my-drawer" className="bg-[#00A99D] btn btn-primary drawer-button border-none"><HiMenuAlt3></HiMenuAlt3></label>
+                <label htmlFor="my-drawer" className="cta-btn btn btn-primary drawer-button border-none"><HiMenuAlt3></HiMenuAlt3></label>
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>

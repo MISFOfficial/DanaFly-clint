@@ -48,7 +48,7 @@ const TourGuideProfile = () => {
         <section className="max-w-6xl mx-auto px-4 py-16">
             <title>DanaFly - Guide Details</title>
             {/* Tour Guide Profile */}
-            <div className="bg-white shadow-xl rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-8 border-t-4 border-[#00A99D] items-center">
+            <div className="bg-p1 shadow-xl rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-8 border-t-4 border-[#00A99D] items-center">
                 {/* Profile Picture */}
                 <div className="flex-shrink-0 flex flex-col items-center">
                     <img
@@ -60,7 +60,7 @@ const TourGuideProfile = () => {
                         Guide ID: <span>{guide._id.slice(0, 5)}.....</span>
 
                         {/* Tooltip */}
-                        <div className="absolute left-1/2 -translate-x-1/2 -top-10 w-max px-2 py-1 text-xs text-black bg-white rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+                        <div className="absolute left-1/2 -translate-x-1/2 -top-10 w-max px-2 py-1 text-xs text-black bg-p1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
                             {guide._id}
                         </div>
                     </div>
@@ -71,9 +71,9 @@ const TourGuideProfile = () => {
                     <h1 className="text-xl md:text-3xl font-bold text-light flex items-center gap-2">
                         <FaUserTie /> {guide.name}
                     </h1>
-                    <p className="text-gray-600 text-sm md:text-lg text-center">{guide.motivation}</p>
+                    <p className="text-light3 text-sm md:text-lg text-center">{guide.motivation}</p>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 mt-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-light mt-4">
                         <p className="flex items-center gap-2 text-sm md:text-lg">
                             <HiOutlineLocationMarker className="text-light" />
                             <span><strong>Location:</strong> {guide.location}</span>
@@ -111,7 +111,7 @@ const TourGuideProfile = () => {
                     {storiesByGuide.map((story) => (
                         <div
                             key={story._id}
-                            className="bg-white shadow-md hover:shadow-lg transition rounded-lg overflow-hidden group"
+                            className="bg-p1 shadow-md hover:shadow-lg transition rounded-lg overflow-hidden group"
                         >
                             <img
                                 src={story.photo}
@@ -122,7 +122,7 @@ const TourGuideProfile = () => {
                                 <h3 className="text-lg font-semibold text-light mb-2">
                                     {story.title}
                                 </h3>
-                                <p className="text-gray-600 text-sm md:text-lg">{story.description}</p>
+                                <p className="text-light3 text-sm md:text-lg">{story.description}</p>
                             </div>
                         </div>
                     ))}

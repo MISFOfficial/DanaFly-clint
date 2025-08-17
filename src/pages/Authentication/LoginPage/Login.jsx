@@ -105,30 +105,30 @@ const Login = () => {
                 onSubmit={handleSubmit(onSubmit)}
                 className="w-full max-w-lg"
             >
-                <h2 className="text-[#1b130d] text-2xl font-bold text-center mb-6">
+                <h2 className="text-light text-2xl font-bold text-center mb-6">
                     Welcome to Travel Bangladesh
                 </h2>
 
                 {/* Email */}
                 <div className="mb-4">
-                    <label className="block text-[#1b130d] font-medium mb-2">Email</label>
+                    <label className="block text-light font-medium mb-2">Email</label>
                     <input
                         type="email"
                         {...register('email', { required: 'Email is required' })}
                         placeholder="Enter your email"
-                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 text-base text-[#1b130d] placeholder:text-[#9a6b4c] focus:outline-none"
+                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 text-base text-light placeholder:text-[#9a6b4c] focus:outline-none"
                     />
                     {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
                 </div>
 
                 {/* Password */}
-                <label className="block text-[#1b130d] font-medium mb-2">Password</label>
+                <label className="block text-light font-medium mb-2">Password</label>
                 <div className='relative'>
                     <input
                         type={showPassword ? 'text' : 'password'}
                         {...register('password', { required: 'Password is required' })}
                         placeholder="Enter your password"
-                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 text-base text-[#1b130d] placeholder:text-[#9a6b4c] focus:outline-none pr-10"
+                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 text-base text-light placeholder:text-[#9a6b4c] focus:outline-none pr-10"
                     />
                     <span
                         className="absolute top-4 right-4  cursor-pointer text-[#9a6b4c]"
@@ -147,7 +147,7 @@ const Login = () => {
                 {/* Submit */}
                 <button
                     type="submit"
-                    className="w-full h-12 bg-[#00A99D] text-[#fcfaf8] rounded-full font-bold text-sm hover:bg-[#3d7672] transition cursor-pointer"
+                    className="w-full h-12 cta-btn text-[#fcfaf8] rounded-full font-bold text-sm hover:bg-[#3d7672] transition cursor-pointer"
                 >
                     Log in
                 </button>
@@ -159,7 +159,7 @@ const Login = () => {
                 <button
                     onClick={handleGoogle}
                     type="button"
-                    className="w-full cursor-pointer h-12 flex items-center justify-center gap-2 bg-[#f3ece7] text-[#1b130d] rounded-full font-bold text-sm hover:bg-[#e7d9cf] transition"
+                    className="w-full cursor-pointer h-12 flex items-center justify-center gap-2 bg-[#f3ece7] text-light rounded-full font-bold text-sm hover:bg-[#e7d9cf] transition"
                 >
                     <FaGoogle /> Continue with Google
                 </button>
