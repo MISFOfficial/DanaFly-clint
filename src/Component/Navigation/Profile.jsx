@@ -62,17 +62,17 @@ const Profile = () => {
         <div className="dropdown dropdown-end ">
             <img tabIndex={0} role="button" className='object-cover h-13 w-13 rounded-full cursor-pointer' src={user.photoURL} alt="" />
             <ul tabIndex={0} className="dropdown-content menu  rounded-box z-1 w-50 md:w-80 p-4 shadow-sm mt-8 space-y-5 btn-border4 ">
-                <div className=' rounded-lg shadow-lg cta-btn flex flex-col justify-center items-center p-3'>
+                <div className=' rounded-lg shadow-lg cta-btn  flex flex-col justify-center items-center p-3'>
                     <img className='w-15 h-15 object-cover rounded-full cursor-pointer' src={user.photoURL} alt="" />
-                    <h1 className='mt-3 text-light text-center'>{user.displayName}</h1>
-                    <p className='text-light text-center'>{user.email}</p>
+                    <h1 className='mt-3 text-white text-center'>{user.displayName}</h1>
+                    <p className='text-white text-center'>{user.email}</p>
                 </div>
-                <ul className=' flex flex-col gap-1.5'>
+                <ul className=' flex flex-col gap-1.5 text-white cta-btn p-2 rounded-lg'>
 
                     <Link to='/deshboard'>
                         <li>
                             <div className='flex items-center gap-2'>
-                                <span className='text-xl text-light3'><GiCaptainHatProfile /></span>
+                                <span className='text-xl '><GiCaptainHatProfile /></span>
                                 <span>Dashboard</span>
                             </div>
                         </li>
@@ -80,14 +80,14 @@ const Profile = () => {
 
                     <li>
                         <div className='flex items-center gap-2'>
-                            <span className='text-xl text-light3'><FaBullhorn /></span>
+                            <span className='text-xl text-white3'><FaBullhorn /></span>
                             <span>Offer Announcements</span>
                         </div>
                     </li>
 
                     <li>
                         <div className='flex items-center gap-2'>
-                            <span className='text-xl text-light3'><FaCog /></span>
+                            <span className='text-xl text-white3'><FaCog /></span>
                             <span>Setting</span>
                         </div>
                     </li>

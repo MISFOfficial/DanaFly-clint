@@ -18,7 +18,7 @@ const Overview = () => {
             <div className="bg-[#00000063] absolute h-full w-full top-0 z-10"></div>
             <div className="absolute h-full w-full top-0 flex flex-col text-light items-center justify-center px-5 md:px-20 z-20">
                 <div>
-                    <h1 className="text-center text-[10px] md:text-xl font-bold border-2 md:border-4  p-2 md:p-4">Discover the beauty of Bangladesh with The Tourist Guide </h1>
+                    <h1 className="text-center text-[10px] md:text-xl font-bold border-2 md:border-4  p-2 text-white md:p-4">Discover the beauty of Bangladesh with The Tourist Guide </h1>
                 </div>
             </div>
         </div>

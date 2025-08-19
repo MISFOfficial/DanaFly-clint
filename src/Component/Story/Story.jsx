@@ -43,12 +43,12 @@ const Story = () => {
                         <img
                             src={story.photo?.[0] || '/placeholder.jpg'} // fallback image
                             alt={story.title}
-                            className="absolute inset-0 w-full h-full object-cover z-0"
+                            className="absolute inset-0 w-full h-full object-cover z-0 "
                         />
 
                         <div className="absolute inset-0 bg-black/50 z-10 transition group-hover:bg-black/60"></div>
 
-                        <div className="relative z-20 h-full flex flex-col justify-center gap-5 p-6 text-light">
+                        <div className="relative z-20 h-full flex flex-col justify-center gap-5 p-6 text-white">
                             <div>
                                 <h3 className="text-xl font-bold">{story.title}</h3>
                                 <p className="italic text-sm mb-2">By {story.posterName}</p>

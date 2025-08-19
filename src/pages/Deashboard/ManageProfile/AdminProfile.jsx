@@ -81,7 +81,7 @@ const AdminProfile = () => {
                         />
                     </p>
                 </div>
-                <div className="bg-p1 text-light3 p-12 rounded-2xl">
+                <div className="bg-p2 text-light3 p-12 rounded-2xl">
                     <h4 className="text-lg">Total Tour Guides</h4>
                     <p className="text-2xl font-bold">
                         <CountUp
@@ -91,7 +91,7 @@ const AdminProfile = () => {
                         />
                     </p>
                 </div>
-                <div className="bg-p1 text-light3 p-12 rounded-2xl">
+                <div className="bg-p2 text-light3 p-12 rounded-2xl">
                     <h4 className="text-lg">Total Packages</h4>
                     <p className="text-2xl font-bold">
                         <CountUp
@@ -101,7 +101,7 @@ const AdminProfile = () => {
                         />
                     </p>
                 </div>
-                <div className="bg-p1 text-light3 p-12 rounded-2xl">
+                <div className="bg-p2 text-light3 p-12 rounded-2xl">
                     <h4 className="text-lg">Total Clients</h4>
                     <p className="text-2xl font-bold">
                         <CountUp
@@ -111,7 +111,7 @@ const AdminProfile = () => {
                         />
                     </p>
                 </div>
-                <div className="bg-p1 text-light3 p-12 rounded-2xl">
+                <div className="bg-p2 text-light3 p-12 rounded-2xl">
                     <h4 className="text-lg">Total Stories</h4>
                     <p className="text-2xl font-bold">
                         <CountUp
