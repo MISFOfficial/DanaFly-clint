@@ -77,16 +77,16 @@ const Banner = () => {
                 }}
                 className="absolute h-full w-full top-0 flex flex-col text-light items-center justify-center px-3 md:px-20 z-20">
                 <div>
-                    <h1 className="font-extrabold text-md md:text-4xl title-font text-start banner-text">
+                    <h1 className="font-extrabold text-md md:text-4xl title-font text-start banner-text text-white">
                         Explore Bangladesh with DanaFly – Your Ultimate Travel Guide
                     </h1>
-                    <p className="mt-2 md:mt-5 text-[12px] md:text-lg">
+                    <p className="mt-2 md:mt-5 text-[12px] md:text-lg text-gray-300">
                         Your trusted travel guide to discover destinations, tours, and local
                         experiences — all in one place.
                     </p>
                     <div className="mt-5 md:mt-10 flex items-center gap-5">
                         <Link to='trips'>
-                            <button className="transition hover:scale-110 px-3 py-1 md:px-8 md:py-3 duration-500 border-white border-3 cursor-pointer text-[12px] md:text-[20px]">
+                            <button className="transition hover:scale-110 px-3 py-1 md:px-8 md:py-3 duration-500 border-white border-3 text-gray-300 cursor-pointer text-[12px] md:text-[20px]">
                                 Book Now
                             </button>
                         </Link>

@@ -8,6 +8,7 @@ import Swal from 'sweetalert2';
 import { Link, useNavigate } from 'react-router';
 // import useAxiosInstance from '../../Hooks/useAxiosInstance';
 import useAxiosSecure from '../../Hooks/useAxiosSecure';
+import { Slide, toast } from 'react-toastify';
 
 const Profile = () => {
     const { user, logOut } = useAuth()
@@ -28,12 +29,16 @@ const Profile = () => {
             if (result.isConfirmed) {
                 logOut()
                     .then(async () => {
-                        Swal.fire({
-                            title: 'Logged out!',
-                            icon: 'success',
-                            text: 'You have been successfully logged out.',
-                            showConfirmButton: false,
-                            timer: 1500
+                        toast.success('You have been successfully logged out!', {
+                            position: "top-center",
+                            autoClose: 3000,
+                            hideProgressBar: false,
+                            closeOnClick: false,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "colored",
+                            transition: Slide,
                         });
 
                         await axiosSecure.post('/logout');

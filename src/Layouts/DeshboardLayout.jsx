@@ -8,6 +8,7 @@ import useAuth from '../Hooks/useAuth';
 import useAxiosSecure from '../Hooks/useAxiosSecure';
 import Loder from '../pages/Loader/Loder';
 import Swal from 'sweetalert2';
+import { Slide, toast } from 'react-toastify';
 
 const DeshboardLayout = () => {
 
@@ -44,12 +45,16 @@ const DeshboardLayout = () => {
             if (result.isConfirmed) {
                 logOut()
                     .then(async () => {
-                        Swal.fire({
-                            title: 'Logged out!',
-                            icon: 'success',
-                            text: 'You have been successfully logged out.',
-                            showConfirmButton: false,
-                            timer: 1500
+                        toast.success('You have been successfully logged out!', {
+                            position: "top-center",
+                            autoClose: 3000,
+                            hideProgressBar: false,
+                            closeOnClick: false,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "colored",
+                            transition: Slide,
                         });
 
                         await axiosSecure.post('/logout');
@@ -76,7 +81,7 @@ const DeshboardLayout = () => {
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col ">
                     {/* Page content here */}
-                    <div className="navbar bg-base-300 w-full lg:hidden">
+                    <div className="navbar bg- w-full lg:hidden">
                         <div className="flex items-center">
                             <label htmlFor="my-drawer-2" aria-label="open sidebar" className="btn btn-square btn-ghost">
                                 <svg
@@ -105,7 +110,7 @@ const DeshboardLayout = () => {
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-                    <div className='min-h-full bg-[#d8d8d8] text-base-content w-60 md:w-80  flex flex-col items-start justify-between'>
+                    <div className='min-h-full bg-p2 [#d8d8d8] text-base-content w-60 md:w-80  flex flex-col items-start justify-between'>
                         <ul className="menu  p-4">
                             {/* Sidebar content here */}
                             <Link to='/' className='w-fit mb-5 md:mb-10'><Logo></Logo></Link>

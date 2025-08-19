@@ -10,7 +10,7 @@ import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import ProfileLoader from '../../../Loader/ProfileLoader';
-import TourGuideProfile from '../../TourGuideProfile/TourGuideProfile';
+// import TourGuideProfile from '../../TourGuideProfile/TourGuideProfile';
 import useAxiosInstance from '../../../Hooks/useAxiosInstance';
 import useAxiosSecure from '../../../Hooks/useAxiosSecure';
 const ManageProfile = () => {
@@ -105,7 +105,7 @@ const ManageProfile = () => {
                     <img
                         src={userInfo?.photoURL}
                         alt="Profile"
-                        className="w-28 h-28 rounded-full border-4 border-[#00A99D] object-cover"
+                        className="w-28 h-28 rounded-full btn-border object-cover"
                     />
                     <div className="space-y-2">
                         <h3 className="text-xl font-semibold flex items-center gap-2">
@@ -130,7 +130,7 @@ const ManageProfile = () => {
                     {userInfo?.role !== 'admin' &&
                         <button
                             onClick={() => navigate('/deshboard/asTourGuide')}
-                            className="bg-p1 border border-[#00A99D] text-light px-5 py-2 rounded hover:cta-btn hover:text-light transition w-full md:w-fit"
+                            className="bg-p1 border btn-border text-light px-5 py-2 rounded hover:cta-btn hover:text-light transition w-full md:w-fit"
                         >
                             Apply For Tour Guide
                         </button>}
@@ -150,7 +150,7 @@ const ManageProfile = () => {
                                     type="text"
                                     {...register("name", { required: "Name is required" })}
                                     defaultValue={user.displayName}
-                                    className="w-full border px-3 py-2 rounded"
+                                    className="w-full border px-3 py-2 rounded text-light3"
                                 />
 
                             </div>
@@ -162,7 +162,7 @@ const ManageProfile = () => {
                                     <input
                                         type="file"
                                         onChange={handlePhoto}
-                                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] px-4 py-2 text-sm text-[#9a6b4c] focus:outline-none cursor-pointer"
+                                        className="w-full rounded-xl border  px-4 py-2 text-sm text-light3 focus:outline-none cursor-pointer"
                                     />
                                 </div>
                             </div>
@@ -174,7 +174,7 @@ const ManageProfile = () => {
                                     {...register("email")}
                                     readOnly
                                     defaultValue={user.email}
-                                    className="w-full border px-3 py-2 rounded bg-gray-100 text-gray-500"
+                                    className="w-full border px-3 py-2 rounded  text-light3"
                                 />
                             </div>
 
@@ -185,7 +185,7 @@ const ManageProfile = () => {
                                     {...register("role")}
                                     readOnly
                                     defaultValue={userInfo?.role}
-                                    className="w-full border px-3 py-2 rounded bg-gray-100 text-gray-500"
+                                    className="w-full border px-3 py-2 rounded  text-light3"
                                 />
                             </div>
 
@@ -193,7 +193,7 @@ const ManageProfile = () => {
                                 <button
                                     type="button"
                                     onClick={() => setIsModalOpen(false)}
-                                    className="px-4 py-2 border rounded hover:bg-gray-100"
+                                    className="px-4 py-2 border rounded hover:"
                                 >
                                     Cancel
                                 </button>

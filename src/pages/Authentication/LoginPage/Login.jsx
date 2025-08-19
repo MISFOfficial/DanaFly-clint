@@ -3,7 +3,7 @@ import { FaEye, FaEyeSlash, FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router'; // use react-router-dom
 import { useForm } from 'react-hook-form';
 import useAuth from '../../../Hooks/useAuth';
-import { toast } from 'react-toastify';
+import { Flip, Slide, toast } from 'react-toastify';
 import Swal from 'sweetalert2';
 import Logo from '../../../Component/Navigation/Logo';
 import useAxiosInstance from '../../../Hooks/useAxiosInstance';
@@ -35,12 +35,16 @@ const Login = () => {
 
         signIn(data.email, data.password)
             .then(async (result) => {
-                Swal.fire({
-                    title: 'Log In!',
-                    icon: 'success',
-                    text: 'You have been successfully log In.',
-                    showConfirmButton: false,
-                    timer: 1500
+                toast.success('You have been successfully logged in!', {
+                    position: "top-center",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                    transition: Slide,
                 });
 
                 const loggedUser = {
@@ -54,13 +58,24 @@ const Login = () => {
             })
             .catch((error) => {
                 console.error('Login failed:', error);
-                toast.error('Invalid email or password');
+                toast.warn('Invalid email or password', {
+                    position: "top-center",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                    transition: Slide,
+                });
+                // alert()
             });
     };
 
     const handleGoogle = () => {
         googleAuth()
-            .then(async(result) => {
+            .then(async (result) => {
                 //console.log(result.user.displayName)
                 const userToDB = {
                     name: result?.user?.displayName,
@@ -80,11 +95,17 @@ const Login = () => {
                 axiosInstance.post('/users', userToDB).then(async (res) => {
                     await axiosSecure.post('/jwt', loggedUser);
                     if (res.data.insertedId || res.data.inserted === false) {
-                        Swal.fire(
-                            'Log In.',
-                            'You have been successfully Log In.',
-                            'success',
-                        );
+                        toast.success('You have been successfully logged in!', {
+                            position: "top-center",
+                            autoClose: 3000,
+                            hideProgressBar: false,
+                            closeOnClick: false,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "colored",
+                            transition: Slide,
+                        });
                         navigate(from);
                     }
                 });
@@ -116,7 +137,7 @@ const Login = () => {
                         type="email"
                         {...register('email', { required: 'Email is required' })}
                         placeholder="Enter your email"
-                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 text-base text-light placeholder:text-[#9a6b4c] focus:outline-none"
+                        className="w-full rounded-xl border border-[#e7d9cf] bg-p2 h-12 px-4 text-base text-light placeholder:text-light3 focus:outline-none"
                     />
                     {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
                 </div>
@@ -128,10 +149,10 @@ const Login = () => {
                         type={showPassword ? 'text' : 'password'}
                         {...register('password', { required: 'Password is required' })}
                         placeholder="Enter your password"
-                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 text-base text-light placeholder:text-[#9a6b4c] focus:outline-none pr-10"
+                        className="w-full rounded-xl border border-[#e7d9cf] bg-p2 h-12 px-4 text-base text-light focus:outline-none pr-10"
                     />
                     <span
-                        className="absolute top-4 right-4  cursor-pointer text-[#9a6b4c]"
+                        className="absolute top-4 right-4  cursor-pointer text-light1"
                         onClick={togglePassword}
                     >
                         {showPassword ? <FaEyeSlash /> : <FaEye />}
@@ -140,7 +161,7 @@ const Login = () => {
                 {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>}
 
                 {/* Forgot Password */}
-                <div className="text-right text-sm text-[#9a6b4c] underline mb-4">
+                <div className="text-right text-sm text-light3 underline mb-4">
                     <Link to='/forgetPass'>Forgot password?</Link>
                 </div>
 
@@ -153,19 +174,19 @@ const Login = () => {
                 </button>
 
                 {/* Divider */}
-                <p className="text-[#9a6b4c] text-sm text-center mt-6 mb-3">Or continue with</p>
+                <p className="text-light3 text-sm text-center mt-6 mb-3">Or continue with</p>
 
                 {/* Google Auth */}
                 <button
                     onClick={handleGoogle}
                     type="button"
-                    className="w-full cursor-pointer h-12 flex items-center justify-center gap-2 bg-[#f3ece7] text-light rounded-full font-bold text-sm hover:bg-[#e7d9cf] transition"
+                    className="w-full cursor-pointer h-12 flex items-center justify-center gap-2  cta-btn text-light rounded-full font-bold text-sm "
                 >
                     <FaGoogle /> Continue with Google
                 </button>
 
                 {/* Signup Link */}
-                <p className="text-[#9a6b4c] text-sm text-center underline mt-6">
+                <p className="text-light3 text-sm text-center underline mt-6">
                     Don't have an account? <Link to="/register">Sign up</Link>
                 </p>
             </form>

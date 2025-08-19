@@ -78,7 +78,7 @@ const JoinAsTourGuide = () => {
 
                 {/* ✅ Conditional Messages */}
                 {application?.status === 'active' || application?.status === 'accepted' ? (
-                    <div className="text-center text-xl text-[#388e3c] font-semibold bg-green-50 border border-green-200 p-4 rounded">
+                    <div className="text-center text-xl text-light font-semibold cta-btn p-4 rounded">
                         🎉 <strong>Congrats!</strong> You are now an official Tour Guide!
                     </div>
                 ) : application?.status === 'pending' ? (

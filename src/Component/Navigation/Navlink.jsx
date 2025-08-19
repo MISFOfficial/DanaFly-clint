@@ -5,6 +5,7 @@ import { NavLink, useNavigate } from 'react-router';
 import Swal from 'sweetalert2';
 import useAuth from '../../Hooks/useAuth';
 import useAxiosSecure from '../../Hooks/useAxiosSecure';
+import { Slide, toast } from 'react-toastify';
 
 const Navlink = () => {
 
@@ -26,12 +27,16 @@ const Navlink = () => {
             if (result.isConfirmed) {
                 logOut()
                     .then(async () => {
-                        Swal.fire({
-                            title: 'Logged out!',
-                            icon: 'success',
-                            text: 'You have been successfully logged out.',
-                            showConfirmButton: false,
-                            timer: 1500
+                       toast.success('You have been successfully logged out!', {
+                            position: "top-center",
+                            autoClose: 3000,
+                            hideProgressBar: false,
+                            closeOnClick: false,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "colored",
+                            transition: Slide,
                         });
 
                         await axiosSecure.post('/logout');

@@ -3,7 +3,7 @@
 
 
 
-body {
+/* body {
       @apply bg-[#0A192F];
       font-family: "Signika Negative", sans-serif;
 }
@@ -53,4 +53,63 @@ body {
 }
 .btn-border4{
       @apply border-[#5b6ac3] border-y-6 border-x-1
+} */
+
+/* ========== Body ========== */
+body {
+      @apply bg-[#f8f9fa]; /* very light gray, clean and soft */
+      font-family: "Signika Negative", sans-serif;
+}
+
+/* ========== Section Backgrounds ========== */
+.bg-2 {
+      @apply bg-[#ffffff]; /* pure white for cards/sections */
+}
+
+.bg-p1 {
+      @apply bg-[#f8f9fa]; /* matches body */
+}
+
+.bg-p2 {
+      @apply bg-[#e9ecef]; /* slightly darker soft gray for contrast */
+}
+
+/* ========== Text Colors ========== */
+.text-light {
+      @apply text-[#343a40]; /* dark gray, easy to read */
+}
+
+.text-light2 {
+      @apply text-[#5c7cfa]; /* soft blue accent for highlights */
+}
+
+.text-light3 {
+      @apply text-[#6c757d]; /* muted gray for secondary text */
+}
+
+.banner-text {
+      font-family: "Borel", cursive;
+}
+
+/* ========== Buttons ========== */
+.cta-btn {
+      @apply bg-[#5c7cfa] 
+      text-white 
+      ;
+}
+
+.btn-border {
+      @apply border-[#5c7cfa] border-3 ;
+}
+
+.btn-border2 {
+      @apply border-[#5c7cfa] border-t-4 rounded-lg; 
+}
+
+.btn-border3 {
+      @apply border-[#5c7cfa] border-b-4 rounded-lg; 
+}
+
+.btn-border4 {
+      @apply border-[#5c7cfa] border-y-4 border-x-1 rounded-lg; 
 }

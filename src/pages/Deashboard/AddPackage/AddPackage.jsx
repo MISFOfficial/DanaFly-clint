@@ -101,13 +101,13 @@ const AddPackage = () => {
                         <label className="block font-semibold mb-1">Tour Type</label>
                         <select
                             {...register('type', { required: 'Please select a tour type' })}
-                            className="w-full border-[#00A99D] border px-4 py-2 rounded"
+                            className="w-full  border px-4 py-2 rounded"
                         >
-                            <option value="">Select type</option>
-                            <option value="Nature">Nature</option>
-                            <option value="Adventure">Adventure</option>
-                            <option value="Cultural">Cultural</option>
-                            <option value="Food">Food</option>
+                            <option className='bg-p1' value="">Select type</option>
+                            <option  className='bg-p1' value="Nature">Nature</option>
+                            <option  className='bg-p1' value="Adventure">Adventure</option>
+                            <option  className='bg-p1' value="Cultural">Cultural</option>
+                            <option  className='bg-p1' value="Food">Food</option>
                         </select>
                         {errors.type && <p className="text-red-500 text-sm">{errors.type.message}</p>}
                     </div>
@@ -120,7 +120,7 @@ const AddPackage = () => {
                                 type="file"
                                 multiple
                                 onChange={handlePhoto}
-                                className="w-full border-[#00A99D] border px-4 py-2 rounded cursor-pointer"
+                                className="w-full  border px-4 py-2 rounded cursor-pointer"
                             />
                             {isUploading && (
                                 <div className="absolute top-2 right-4">

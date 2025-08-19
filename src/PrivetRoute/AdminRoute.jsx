@@ -3,6 +3,8 @@ import useAuth from '../Hooks/useAuth';
 import useUserRole from '../Hooks/useUserRole';
 import { Navigate, useLocation } from 'react-router';
 import Loder from '../pages/Loader/Loder';
+import ComponentName from '../pages/Loader/commnloader/CommonLoader';
+import CommonLoader from '../pages/Loader/commnloader/CommonLoader';
 
 const AdminRoute = ({ children }) => {
 
@@ -14,7 +16,7 @@ const AdminRoute = ({ children }) => {
     const location = useLocation()
 
     if (loader || roleLoading) {
-        return <Loder></Loder>
+        return <CommonLoader></CommonLoader>
     }
 
     if (!user || role !== 'admin' ) {

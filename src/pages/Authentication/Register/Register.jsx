@@ -108,7 +108,7 @@ const Register = () => {
 
     return (
         <div
-            className="min-h-screen flex items-center justify-center bg-p1 p-4 md:p-0"
+            className="min-h-screen flex items-center justify-center  p-4 md:p-0 bg-p1"
         >
             <ToastContainer position="top-center" autoClose={3000} />
             <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-lg">
@@ -127,7 +127,7 @@ const Register = () => {
                         type="text"
                         {...register('name', { required: 'Name is required' })}
                         placeholder="Enter your full name"
-                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 text-light placeholder:text-[#9a6b4c] focus:outline-none"
+                        className="w-full rounded-xl border border-[#e7d9cf] bg-p2 h-12 px-4 text-light focus:outline-none"
                     />
                     {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
                 </div>
@@ -139,7 +139,7 @@ const Register = () => {
                         type="email"
                         {...register('email', { required: 'Email is required' })}
                         placeholder="Enter your email"
-                        className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 text-light placeholder:text-[#9a6b4c] focus:outline-none"
+                        className="w-full rounded-xl border border-[#e7d9cf] bg-p2 h-12 px-4 text-light focus:outline-none"
                     />
                     {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
                 </div>
@@ -152,7 +152,7 @@ const Register = () => {
                             type="file"
                             // accept="image/*"
                             onChange={handlePhoto}
-                            className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] px-4 py-2 text-sm text-[#9a6b4c] focus:outline-none cursor-pointer"
+                            className="w-full rounded-xl border border-[#e7d9cf] bg-p2 px-4 py-2 text-sm text-light3 focus:outline-none cursor-pointer"
                         />
                         {parcentLoader && (
                             <p className="text-green-600 absolute top-2 right-4 text-sm">{parcentLoader}%</p>
@@ -172,11 +172,11 @@ const Register = () => {
                                 pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).*$/
                             })}
                             placeholder="Enter your password"
-                            className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 pr-10 text-light placeholder:text-[#9a6b4c] focus:outline-none"
+                            className="w-full rounded-xl border border-[#e7d9cf] bg-p2 h-12 px-4 pr-10 text-light focus:outline-none"
                         />
                         <span
                             onClick={() => setShowPassword(!showPassword)}
-                            className="absolute top-4 right-4 cursor-pointer text-[#9a6b4c]"
+                            className="absolute top-4 right-4 cursor-pointer text-light3"
                         >
                             {showPassword ? <FaEyeSlash /> : <FaEye />}
                         </span>
@@ -195,11 +195,11 @@ const Register = () => {
                                 validate: value => value === password || 'Passwords do not match'
                             })}
                             placeholder="Confirm your password"
-                            className="w-full rounded-xl border border-[#e7d9cf] bg-[#fcfaf8] h-12 px-4 pr-10 text-light placeholder:text-[#9a6b4c] focus:outline-none"
+                            className="w-full rounded-xl border border-[#e7d9cf] bg-p2 h-12 px-4 pr-10 text-light focus:outline-none"
                         />
                         <span
                             onClick={() => setShowConfirm(!showConfirm)}
-                            className="absolute top-4 right-4 cursor-pointer text-[#9a6b4c]"
+                            className="absolute top-4 right-4 cursor-pointer text-light3"
                         >
                             {showConfirm ? <FaEyeSlash /> : <FaEye />}
                         </span>
@@ -216,7 +216,7 @@ const Register = () => {
                 </button>
 
                 {/* Login Link */}
-                <p className="text-[#9a6b4c] text-sm text-center underline mt-6">
+                <p className="text-light3 text-sm text-center underline mt-6">
                     Already have an account? <Link to="/login">Login</Link>
                 </p>
             </form>

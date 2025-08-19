@@ -143,7 +143,7 @@ const ManageCandidates = () => {
                 <button
                     onClick={prevPage}
                     disabled={currentPage === 1}
-                    className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 disabled:opacity-50"
+                    className="px-3 py-1 rounded cta-btn disabled:opacity-50"
                 >
                     Previous
                 </button>
@@ -151,7 +151,7 @@ const ManageCandidates = () => {
                     <button
                         key={i + 1}
                         onClick={() => paginate(i + 1)}
-                        className={`px-3 py-1 rounded ${currentPage === i + 1 ? 'cta-btn text-light' : 'bg-gray-100 hover:bg-gray-300'
+                        className={`px-3 py-1 rounded ${currentPage === i + 1 ? 'cta-btn text-light' : 'bg-amber-50p1'
                             }`}
                     >
                         {i + 1}
@@ -160,7 +160,7 @@ const ManageCandidates = () => {
                 <button
                     onClick={nextPage}
                     disabled={currentPage === totalPages}
-                    className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 disabled:opacity-50"
+                    className="px-3 py-1 rounded cta-btn disabled:opacity-50"
                 >
                     Next
                 </button>

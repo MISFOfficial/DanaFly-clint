@@ -114,7 +114,7 @@ const AddStory = () => {
             <h2 className="text-3xl font-bold text-light mb-6 text-start">Add Your Story</h2>
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="bg-p1 p-8 rounded-xl border-t-8 border-[#00A99D] shadow space-y-6"
+                className="bg-p1 p-8 rounded-xl border-t-8 border-gray-400 shadow space-y-6"
             >
                 {/* Title */}
                 <div>
@@ -122,7 +122,7 @@ const AddStory = () => {
                     <input
                         type="text"
                         {...register('title', { required: 'Title is required' })}
-                        className="w-full border-[#00A99D] border px-4 py-2 rounded focus:outline-none"
+                        className="w-full border-gray-400 border px-4 py-2 rounded focus:outline-none"
                         placeholder="Enter your story title"
                     />
                     {errors.title && <p className="text-red-500 text-sm">{errors.title.message}</p>}
@@ -134,7 +134,7 @@ const AddStory = () => {
                     <textarea
                         {...register('description', { required: 'Description is required' })}
                         rows={5}
-                        className="w-full border-[#00A99D] border px-4 py-2 rounded resize-none focus:outline-none"
+                        className="w-full border-gray-400 border px-4 py-2 rounded resize-none focus:outline-none"
                         placeholder="Share your experience..."
                     />
                     {errors.description && <p className="text-red-500 text-sm">{errors.description.message}</p>}
@@ -145,7 +145,7 @@ const AddStory = () => {
                     <label className="block font-semibold mb-1">Story Type</label>
                     <select
                         {...register('type', { required: 'Please select a story type' })}
-                        className="w-full border-[#00A99D] border px-4 py-2 rounded"
+                        className="w-full border-gray-400 border px-4 py-2 rounded"
                     >
                         <option value="">Select type</option>
                         <option value="Nature">Nature</option>
@@ -169,7 +169,7 @@ const AddStory = () => {
                                     {...field}
                                     selected={field.value}
                                     onChange={field.onChange}
-                                    className="w-full border-[#00A99D] border px-4 py-2 rounded"
+                                    className="w-full border-gray-400 border px-4 py-2 rounded"
                                     placeholderText="Choose date"
                                 />
                             )}
@@ -184,7 +184,7 @@ const AddStory = () => {
                                 {...register('rating', { required: 'Please input rating out of 5 ' })}
                                 type="number"
                                 maxLength={5}
-                                className="w-full border-[#00A99D] border px-4 py-2 rounded cursor-pointer"
+                                className="w-full border-gray-400 border px-4 py-2 rounded cursor-pointer"
                             />
                         </div>
                     </div>
@@ -195,7 +195,7 @@ const AddStory = () => {
                                 type="file"
                                 multiple
                                 onChange={handleImageChange}
-                                className="w-full border-[#00A99D] border px-4 py-2 rounded cursor-pointer"
+                                className="w-full border-gray-400 border px-4 py-2 rounded cursor-pointer"
                             />
                             {isUploading && (
                                 <div className="absolute top-2 right-4">
@@ -215,7 +215,7 @@ const AddStory = () => {
                     <input
                         type="text"
                         {...register('location')}
-                        className="w-full border-[#00A99D] border px-4 py-2 rounded"
+                        className="w-full border-gray-400 border px-4 py-2 rounded"
                         placeholder="e.g., Cox's Bazar"
                     />
                 </div>
@@ -226,7 +226,7 @@ const AddStory = () => {
                     <input
                         type="text"
                         {...register('tags')}
-                        className="w-full border-[#00A99D] border px-4 py-2 rounded"
+                        className="w-full border-gray-400 border px-4 py-2 rounded"
                         placeholder="e.g., beach, sunset, fun"
                     />
                 </div>

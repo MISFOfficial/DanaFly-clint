@@ -58,12 +58,13 @@ const ManageUsers = () => {
                 <input
                     type="text"
                     placeholder="Search by name or email"
-                    className="border border-gray-300 px-4 py-2 rounded w-full sm:w-1/2"
+                    className="border border-gray-400 px-4 py-2 rounded w-full sm:w-1/2"
                     value={searchText}
                     onChange={handleSearch}
                 />
-                <div className="w-full sm:w-1/3">
+                <div className="w-full sm:w-1/3 ">
                     <Select
+                        className='text-light2'
                         options={roleOptions}
                         onChange={handleRoleChange}
                         isClearable
@@ -73,14 +74,14 @@ const ManageUsers = () => {
             </div>
 
             <div className="overflow-x-auto rounded-lg">
-                <table className="w-full border border-gray-200 rounded shadow-sm">
+                <table className="w-full border border-gray-400 rounded shadow-sm">
                     <thead className="cta-btn text-light">
                         <tr>
-                            <th className="p-4 border">#</th>
-                            <th className="p-4 border">Name</th>
-                            <th className="p-4 border">Email</th>
-                            <th className="p-4 border">Image</th>
-                            <th className="p-4 border">Role</th>
+                            <th className="p-4 border border-gray-400">#</th>
+                            <th className="p-4 border border-gray-400">Name</th>
+                            <th className="p-4 border border-gray-400">Email</th>
+                            <th className="p-4 border border-gray-400">Image</th>
+                            <th className="p-4 border border-gray-400">Role</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -94,7 +95,7 @@ const ManageUsers = () => {
                             </tr>
                         ) : (
                             currentUsers.map((user, index) => (
-                                <tr key={user._id} className='border-b border-gray-300'>
+                                <tr key={user._id} className='border-b border-gray-400'>
                                     <td className="p-4 text-center">{indexOfFirstUser + index + 1}</td>
                                     <td className="p-4">{user.name}</td>
                                     <td className="p-4">{user.email}</td>
@@ -120,7 +121,7 @@ const ManageUsers = () => {
                 <button
                     onClick={prevPage}
                     disabled={currentPage === 1}
-                    className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 disabled:opacity-50"
+                    className="px-3 py-1 rounded cta-btn disabled:opacity-50"
                 >
                     Previous
                 </button>
@@ -128,7 +129,7 @@ const ManageUsers = () => {
                     <button
                         key={i + 1}
                         onClick={() => paginate(i + 1)}
-                        className={`px-3 py-1 rounded ${currentPage === i + 1 ? 'cta-btn text-light' : 'bg-gray-100 hover:bg-gray-300'}`}
+                        className={`px-3 py-1 rounded ${currentPage === i + 1 ? 'cta-btn text-light' : 'bg-p1'}`}
                     >
                         {i + 1}
                     </button>
@@ -136,7 +137,7 @@ const ManageUsers = () => {
                 <button
                     onClick={nextPage}
                     disabled={currentPage === totalPages}
-                    className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 disabled:opacity-50"
+                    className="px-3 py-1 rounded cta-btn disabled:opacity-50"
                 >
                     Next
                 </button>

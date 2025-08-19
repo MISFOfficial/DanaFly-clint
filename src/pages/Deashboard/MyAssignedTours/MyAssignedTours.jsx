@@ -90,9 +90,9 @@ const MyAssignedTours = () => {
                             <td colSpan="5" className="text-center py-6">Loading...</td>
                         </tr> :
                             (
-                                bookings.length === 0 ? (<p className="text-center text-gray-500">No assigned tours found.</p>) :
+                                bookings.length === 0 ? (<p className="text-center text-light3">No assigned tours found.</p>) :
                                     currentBookings.map(booking => (
-                                        <tr key={booking._id} className="border-b border-gray-200">
+                                        <tr key={booking._id} className="border-b border-gray-500">
                                             <td className="py-2 px-4">{booking.packageName}</td>
                                             <td className="py-2 px-4">{booking.touristName}</td>
                                             <td className="py-2 px-4">{booking.tourDate}</td>
@@ -134,7 +134,7 @@ const MyAssignedTours = () => {
                 <button
                     onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
                     disabled={currentPage === 1}
-                    className="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded disabled:opacity-50"
+                    className="px-3 py-1 cta-btn rounded disabled:opacity-50"
                 >
                     Previous
                 </button>
@@ -142,7 +142,7 @@ const MyAssignedTours = () => {
                     <button
                         key={pageNum + 1}
                         onClick={() => setCurrentPage(pageNum + 1)}
-                        className={`px-3 py-1 rounded ${currentPage === pageNum + 1 ? 'cta-btn text-light' : 'bg-gray-200 hover:bg-gray-300'}`}
+                        className={`px-3 py-1 rounded ${currentPage === pageNum + 1 ? 'cta-btn text-light' : 'bg-p1'}`}
                     >
                         {pageNum + 1}
                     </button>
@@ -150,7 +150,7 @@ const MyAssignedTours = () => {
                 <button
                     onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
                     disabled={currentPage === totalPages}
-                    className="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded disabled:opacity-50"
+                    className="px-3 py-1 cta-btn rounded disabled:opacity-50"
                 >
                     Next
                 </button>
